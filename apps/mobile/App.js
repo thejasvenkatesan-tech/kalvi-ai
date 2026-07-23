@@ -12,7 +12,7 @@ import LeaderboardScreen from "./src/screens/LeaderboardScreen";
 import { colors, spacing, fontSizes } from "./src/constants/tokens";
 
 // ── Paste your Gemini API key here for testing ──────────────────────────────
-const GEMINI_API_KEY = "AQ.Ab8RN6JQE8-VK2ECp_qwxJAw-kjYs4hl77zKxdLnb2sdnBf3-Q";
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY || "";  // Set via .env — never commit keys
 // ────────────────────────────────────────────────────────────────────────────
 
 const INITIAL_MISSIONS = [
