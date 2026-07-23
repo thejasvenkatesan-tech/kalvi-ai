@@ -1,0 +1,7 @@
+{
+  "name": "@kalvi/db",
+  "version": "1.0.0",
+  "scripts": {
+    "push": "echo 'Run schema.sql in your Supabase SQL editor'"
+  }
+}

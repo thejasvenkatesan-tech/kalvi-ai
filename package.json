@@ -1,0 +1,14 @@
+{
+  "name": "kalvi-ai",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "mobile": "npm run start --workspace=apps/mobile",
+    "web": "npm run dev --workspace=apps/web",
+    "db": "npm run push --workspace=packages/db"
+  }
+}
