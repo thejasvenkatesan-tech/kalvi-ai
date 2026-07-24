@@ -3,7 +3,7 @@ import {
 } from "react-native";
 import { colors, spacing, radii, fontSizes } from "../constants/tokens";
 
-export default function HomeScreen({ student, questionsAsked, savedCount, setTab }) {
+export default function HomeScreen({ student, questionsAsked, savedCount, setTab, onLogout }) {
   return (
     <SafeAreaView style={s.safe}>
       <ScrollView contentContainerStyle={s.scroll} showsVerticalScrollIndicator={false}>
@@ -11,8 +11,11 @@ export default function HomeScreen({ student, questionsAsked, savedCount, setTab
         {/* Welcome */}
         <View style={s.welcome}>
           <Text style={s.welcomeText}>வணக்கம், {student.name}! 👋</Text>
-          <Text style={s.schoolText}>{student.school}</Text>
+          <Text style={s.schoolText}>{student.school?.name || student.school}</Text>
           <Text style={s.classText}>{student.cls}ஆம் வகுப்பு • Roll No: {student.roll}</Text>
+        <TouchableOpacity onPress={onLogout} style={s.logoutBtn}>
+          <Text style={s.logoutText}>🚪 வெளியேறு</Text>
+        </TouchableOpacity>
         </View>
 
         {/* Stats */}
@@ -113,4 +116,6 @@ const s = StyleSheet.create({
   subjectEn:     { fontSize: fontSizes.xs, color: colors.muted, textAlign: "center" },
   infoCard:      { backgroundColor: colors.blueLight, borderRadius: radii.lg, padding: spacing.md },
   infoText:      { fontSize: fontSizes.sm, color: colors.blue, lineHeight: 20 },
+  logoutBtn:     { marginTop: spacing.sm, alignSelf: 'flex-start', backgroundColor: 'rgba(255,255,255,0.15)', borderRadius: radii.full, paddingHorizontal: spacing.md, paddingVertical: spacing.xs },
+  logoutText:    { fontSize: fontSizes.xs, color: 'rgba(255,255,255,0.8)', fontWeight: '600' },
 });

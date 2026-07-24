@@ -18,6 +18,8 @@ try {
 }
 import { colors, spacing, radii, fontSizes } from "../constants/tokens";
 import { askVidhu, getOfflineAnswer, MARK_SCHEMES } from "../utils/vidhu";
+import { logTopicSearch, saveReplyToDb, incrementQuestions } from "../utils/supabase";
+import { detectSubject } from "../utils/vidhu";
 
 const SUGGESTIONS = [
   "ஒளிச்சேர்க்கை என்றால் என்ன?",
@@ -26,13 +28,53 @@ const SUGGESTIONS = [
   "தமிழ் இலக்கணம் விளக்கு",
 ];
 
+// ── LaTeX Cleaner ─────────────────────────────────────────────────────────────
+function cleanLatex(text) {
+  if (!text) return text;
+  return text
+    // Remove $...$ inline math - extract content
+    .replace(/\$([^$]+)\$/g, (_, inner) => {
+      return inner
+        .replace(/\^2/g, '²').replace(/\^3/g, '³').replace(/\^n/g, 'ⁿ')
+        .replace(/\sqrt\{([^}]+)\}/g, '√$1')
+        .replace(/\frac\{([^}]+)\}\{([^}]+)\}/g, '($1)/($2)')
+        .replace(/\rightarrow/g, '→').replace(/\leftarrow/g, '←')
+        .replace(/\times/g, '×').replace(/\div/g, '÷')
+        .replace(/\pi/g, 'π').replace(/\alpha/g, 'α').replace(/\beta/g, 'β')
+        .replace(/\geq/g, '≥').replace(/\leq/g, '≤').replace(/\neq/g, '≠')
+        .replace(/\_/g, '_').replace(/\{|\}/g, '')
+        .trim();
+    })
+    // Remove any remaining $ signs
+    .replace(/\$/g, '')
+    // Fix ^2 ^3 outside dollar signs
+    .replace(/\^2/g, '²').replace(/\^3/g, '³')
+    // Fix \rightarrow outside dollar signs  
+    .replace(/\rightarrow/g, '→').replace(/\sqrt\{([^}]+)\}/g, '√$1')
+    // Remove orphaned ** at end of lines
+    .replace(/\*\*\s*$/gm, '')
+    .replace(/^\s*\*\*\s*$/gm, '');
+}
+
 // ── Simple Markdown Renderer ───────────────────────────────────────────────
 function SimpleMarkdown({ text }) {
-  const lines = (text || "").split("\n");
+  const cleaned = cleanLatex(text || "");
+  const lines = cleaned.split("\n");
   const elements = [];
   lines.forEach((line, i) => {
     const trimmed = line.trim();
     if (!trimmed) { elements.push(<View key={i} style={{ height: 6 }} />); return; }
+    // Handle **Text: pattern at start of line as bold heading
+    if (/^\*\*[^*]/.test(trimmed) && trimmed.endsWith('**')) {
+      const t = trimmed.replace(/\*\*/g, '');
+      elements.push(<Text key={i} style={md.h3}>{t}</Text>);
+      return;
+    }
+    if (/^\*\*[^*]/.test(trimmed) && !trimmed.endsWith('**')) {
+      const t = trimmed.replace(/^\*\*/, '').replace(/\*\*/g, '');
+      elements.push(<Text key={i} style={md.bold}>{t}</Text>);
+      return;
+    }
     if (trimmed.startsWith("### ")) {
       elements.push(<Text key={i} style={md.h3}>{trimmed.replace(/^###\s*/, "").replace(/\*\*/g, "")}</Text>);
       return;
@@ -82,7 +124,7 @@ const md = StyleSheet.create({
 });
 
 // ── Main Component ─────────────────────────────────────────────────────────
-export default function VidhuScreen({ apiKey, studentClass = "8", onSaveReply, onQuestionAsked }) {
+export default function VidhuScreen({ apiKey, studentClass = "8", onSaveReply, onQuestionAsked, student }) {
   const [msgs, setMsgs]               = useState([{
     id: "0", role: "assistant",
     content: "வணக்கம்! நான் விது 🦉\n\nபாடம் சம்பந்தமான எந்த கேள்வியும் கேட்கலாம் — தமிழில் அல்லது ஆங்கிலத்தில்!\n\nகணிதம், அறிவியல், தமிழ், சமூக அறிவியல், AI — எல்லாம் சொல்கிறேன்.\n\n🎤 குரலிலும் கேட்கலாம்!\n\n⚠️ நான் AI — தவறுகள் நடக்கலாம். எல்லா பதில்களையும் உன் ஆசிரியரிடம் உறுதி செய்துகொள்."
@@ -206,6 +248,12 @@ export default function VidhuScreen({ apiKey, studentClass = "8", onSaveReply, o
       setMsgs(m => [...m, replyMsg]);
       setLastAnswer(reply);
       setOffline(false);
+      // Log to Supabase
+      if (student?.id && student?.school?.id) {
+        const subject = detectSubject(text);
+        logTopicSearch(student.id, student.school.id, studentClass, subject, text);
+        incrementQuestions(student.id);
+      }
       // Auto-speak if listening was used
       if (listening === false && input === "") speakAnswer(replyMsg.id, reply);
     } catch {

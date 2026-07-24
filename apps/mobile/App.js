@@ -1,13 +1,15 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { View, Text, TouchableOpacity, StyleSheet, Platform } from "react-native";
+import { SafeAreaProvider, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { StatusBar } from "expo-status-bar";
-import LoginScreen    from "./src/screens/LoginScreen";
+import OnboardingScreen from "./src/screens/OnboardingScreen";
 import HomeScreen     from "./src/screens/HomeScreen";
 import VidhuScreen    from "./src/screens/VidhuScreen";
 import SavedScreen    from "./src/screens/SavedScreen";
 import { colors, spacing, fontSizes } from "./src/constants/tokens";
+import { supabase } from "./src/utils/supabase";
 
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY || ""; // dev only
+const GEMINI_API_KEY = "AQ.Ab8RN6IovskFL-xy1YMNJR4_RUtU27rIBfUfix78z_5hYOFCyQ"; // dev only // dev only
 
 const TABS = [
   { id: "home",  label: "முகப்பு", icon: "🏠" },
@@ -15,7 +17,8 @@ const TABS = [
   { id: "saved", label: "சேமிப்பு", icon: "🔖" },
 ];
 
-export default function App() {
+function AppContent() {
+  const insets = useSafeAreaInsets();
   const [student, setStudent]             = useState(null);
   const [tab, setTab]                     = useState("home");
   const [savedReplies, setSavedReplies]   = useState([]);
@@ -29,18 +32,59 @@ export default function App() {
     setTimeout(() => setToast(""), 3000);
   }
 
-  function onSaveReply(question, answer, subject) {
+  async function onSaveReply(question, answer, subject) {
     const reply = { id: Date.now().toString(), question, answer, subject, savedAt: new Date().toISOString() };
     setSavedReplies(r => [reply, ...r]);
     setUnreadSaved(n => n + 1);
-    showToast("🔖 பதில் சேமிக்கப்பட்டது!");
+    if (student && student.id) {
+      try {
+        const { error } = await supabase
+          .from('saved_replies')
+          .insert({ student_id: student.id, question, answer, subject: subject || 'Other' });
+        showToast(error ? "⚠️ " + error.message.slice(0, 40) : "🔖 பதில் சேமிக்கப்பட்டது!");
+      } catch(e) {
+        showToast("⚠️ " + e.message.slice(0, 40));
+      }
+    } else {
+      showToast("🔖 பதில் சேமிக்கப்பட்டது!");
+    }
   }
 
   function onQuestionAsked() {
     setQuestionsAsked(q => q + 1);
   }
 
-  if (!student) return <LoginScreen onDone={setStudent} />;
+  useEffect(() => {
+    if (student?.id) loadStudentData(student.id);
+  }, [student?.id]);
+
+  async function loadStudentData(studentId) {
+    // Load saved replies
+    const { data: replies } = await supabase
+      .from('saved_replies')
+      .select('*')
+      .eq('student_id', studentId)
+      .order('saved_at', { ascending: false });
+    if (replies) setSavedReplies(replies.map(r => ({ ...r, savedAt: r.saved_at })));
+
+    // Load questions asked count
+    const { data: student } = await supabase
+      .from('students')
+      .select('questions_asked')
+      .eq('id', studentId)
+      .single();
+    if (student) setQuestionsAsked(student.questions_asked || 0);
+  }
+
+  function onLogout() {
+    setStudent(null);
+    setTab('home');
+    setSavedReplies([]);
+    setQuestionsAsked(0);
+    setUnreadSaved(0);
+  }
+
+  if (!student) return <OnboardingScreen onDone={setStudent} />;
 
   return (
     <View style={s.root}>
@@ -57,13 +101,13 @@ export default function App() {
 
       {/* Screens */}
       <View style={s.screen}>
-        {tab === "home"  && <HomeScreen student={student} questionsAsked={questionsAsked} savedCount={savedReplies.length} setTab={setTab} />}
-        {tab === "vidhu" && <VidhuScreen apiKey={GEMINI_API_KEY} studentClass={student.cls} onSaveReply={onSaveReply} onQuestionAsked={onQuestionAsked} />}
+        {tab === "home"  && <HomeScreen student={student} questionsAsked={questionsAsked} savedCount={savedReplies.length} setTab={setTab} onLogout={onLogout} />}
+        {tab === "vidhu" && <VidhuScreen apiKey={GEMINI_API_KEY} studentClass={student.cls} onSaveReply={onSaveReply} onQuestionAsked={onQuestionAsked} student={student} />}
         {tab === "saved" && <SavedScreen savedReplies={savedReplies} setSavedReplies={setSavedReplies} student={student} />}
       </View>
 
       {/* Bottom nav */}
-      <View style={s.nav}>
+      <View style={[s.nav, { paddingBottom: Math.max(insets.bottom, 12) }]}>
         {TABS.map(t => (
           <TouchableOpacity key={t.id} style={s.navItem} onPress={() => { setTab(t.id); if (t.id === "saved") setUnreadSaved(0); }}>
             <Text style={s.navIcon}>{t.icon}</Text>
@@ -96,3 +140,11 @@ const s = StyleSheet.create({
   badge:          { position: "absolute", top: 4, right: 12, backgroundColor: colors.terra, borderRadius: 10, minWidth: 16, height: 16, alignItems: "center", justifyContent: "center" },
   badgeText:      { color: colors.white, fontSize: 10, fontWeight: "700" },
 });
+
+export default function App() {
+  return (
+    <SafeAreaProvider>
+      <AppContent />
+    </SafeAreaProvider>
+  );
+}

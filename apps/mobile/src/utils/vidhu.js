@@ -192,3 +192,22 @@ export async function askVidhu(messages, apiKey, studentClass, markFilter) {
   return data.candidates?.[0]?.content?.parts?.[0]?.text
     || "மன்னிக்கவும், மீண்டும் கேட்கவும். 🦉";
 }
+
+// ── Subject Detection ──────────────────────────────────────────────────────
+const SUBJECT_KEYWORDS = {
+  'Science':  ['photosynthesis','ஒளிச்சேர்க்கை','newton','நியூட்டன்','physics','chemistry','biology','வேதியியல்','இயற்பியல்','உயிரியல்','cell','atom','force','energy','acid','base','molecule','dna'],
+  'Maths':    ['equation','கணக்கு','algebra','geometry','triangle','circle','fraction','decimal','percentage','area','volume','angle','theorem','number','கணிதம்'],
+  'Tamil':    ['இலக்கணம்','கவிதை','சங்கம்','தொல்காப்பியம்','நன்னூல்','உயிர்','மெய்','திணை','குறள்','thirukkural','இலக்கியம்','தமிழ்'],
+  'Social':   ['history','geography','civics','economics','வரலாறு','புவியியல்','அரசியல்','பொருளாதாரம்','river','mountain','empire','revolution','constitution'],
+  'English':  ['grammar','tense','verb','noun','adjective','essay','comprehension','vocabulary','spelling'],
+  'Computer': ['computer','கணினி','software','hardware','program','internet','network','storage'],
+  'AI':       ['ai','artificial intelligence','machine learning','prompt','chatgpt','robot','automation','neural','dataset'],
+};
+
+export function detectSubject(question) {
+  const lower = question.toLowerCase();
+  for (const [subject, keywords] of Object.entries(SUBJECT_KEYWORDS)) {
+    if (keywords.some(kw => lower.includes(kw))) return subject;
+  }
+  return 'Other';
+}

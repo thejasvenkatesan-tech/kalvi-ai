@@ -5,7 +5,7 @@ import {
   Platform, ScrollView, ActivityIndicator
 } from "react-native";
 import { colors, spacing, radii, fontSizes } from "../constants/tokens";
-import { fetchSchools } from "../utils/supabase";
+import { fetchSchools, loginStudent } from "../utils/supabase";
 
 const CLASS_SECTIONS = [
   "6A","6B","6C",
@@ -36,6 +36,7 @@ export default function OnboardingScreen({ onDone }) {
   const [pin, setPin]                       = useState("");
   const [showPin, setShowPin]               = useState(false);
   const [error, setError]                   = useState("");
+  const [authLoading, setAuthLoading]       = useState(false);
 
   useEffect(() => {
     if (step === 1) loadSchools();
@@ -58,14 +59,25 @@ export default function OnboardingScreen({ onDone }) {
     return false;
   }
 
-  function next() {
+  async function next() {
     if (!canNext()) { setError("அனைத்தையும் தேர்வு செய்க"); return; }
     setError("");
     if (step < 3) { setStep(s => s + 1); return; }
+
+    // Authenticate against Supabase
+    setAuthLoading(true);
+    const { student: dbStudent, error: authError } = await loginStudent(
+      school.id, roll.trim(), name.trim(), pin
+    );
+    setAuthLoading(false);
+
+    if (authError) {
+      setError(authError);
+      return;
+    }
+
     onDone({
-      name: name.trim(),
-      roll: roll.trim(),
-      pin,
+      ...dbStudent,
       school,
       classSection,
       cls: classSection.replace(/[A-Z]/g, ""),
@@ -159,8 +171,8 @@ export default function OnboardingScreen({ onDone }) {
 
             {error ? <Text style={s.error}>{error}</Text> : null}
 
-            <TouchableOpacity style={[s.btn, !canNext() && s.btnDisabled]} onPress={next}>
-              <Text style={s.btnText}>{STEPS[step].btn}</Text>
+            <TouchableOpacity style={[s.btn, (!canNext() || authLoading) && s.btnDisabled]} onPress={next}>
+              <Text style={s.btnText}>{authLoading ? 'சரிபார்க்கிறோம்...' : STEPS[step].btn}</Text>
             </TouchableOpacity>
 
             <View style={s.dots}>
