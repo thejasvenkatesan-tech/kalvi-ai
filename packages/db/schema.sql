@@ -148,3 +148,59 @@ insert into badges (slug, name_ta, name_en, icon, description, level) values
   ('fact_checker','உண்மை காவலர்',   'Fact Checker',  '🧐', 'Completed Mission 3',               'silver'),
   ('ai_teacher',  'AI ஆசிரியர்',    'AI Teacher',    '👨‍👩‍👧','Completed Mission 4',               'silver');
 
+
+-- ─────────────────────────────────────────────
+-- SCHEMA UPDATE v2 — Student Auth + Topic Tracking
+-- ─────────────────────────────────────────────
+
+-- Drop old gamification tables (keep for reference, commented out)
+-- DROP TABLE leaderboard_weekly;
+-- DROP TABLE student_badges;
+-- DROP TABLE badges;
+-- DROP TABLE mission_completions;
+
+-- ─── STUDENT AUTH (replaces phone OTP) ────────
+alter table students add column if not exists roll_number text;
+alter table students add column if not exists pin_hash text;
+alter table students add column if not exists dob date;
+alter table students add column if not exists pin_changed boolean default false;
+alter table students add column if not exists questions_asked integer default 0;
+
+-- Unique constraint per school
+create unique index if not exists students_school_roll 
+  on students(school_id, roll_number);
+
+-- ─── SAVED REPLIES ─────────────────────────────
+create table if not exists saved_replies (
+  id          uuid primary key default uuid_generate_v4(),
+  student_id  uuid references students(id) on delete cascade,
+  question    text not null,
+  answer      text not null,
+  subject     text,           -- AI-detected subject tag
+  saved_at    timestamptz default now()
+);
+
+-- ─── TOPIC TRACKING ────────────────────────────
+create table if not exists topic_searches (
+  id          uuid primary key default uuid_generate_v4(),
+  student_id  uuid references students(id) on delete cascade,
+  school_id   uuid references schools(id) on delete cascade,
+  class       text,
+  subject     text not null,  -- Tamil, Science, Maths, Social, AI, English, Other
+  topic       text,           -- specific topic e.g. "Photosynthesis"
+  question    text,
+  searched_at timestamptz default now()
+);
+
+-- ─── STUDENT SESSIONS (auth) ───────────────────
+create table if not exists student_sessions (
+  id          uuid primary key default uuid_generate_v4(),
+  student_id  uuid references students(id) on delete cascade,
+  token       text unique not null,
+  created_at  timestamptz default now(),
+  expires_at  timestamptz default now() + interval '30 days'
+);
+
+-- ─── SEED: Update students table structure ─────
+-- Teachers will register students via dashboard
+-- PIN stored as bcrypt hash

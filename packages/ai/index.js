@@ -133,3 +133,24 @@ module.exports = {
   VIDHU_SYSTEM_PROMPT,
   GEMINI_MODEL,
 };
+
+// ─── Subject Detection ─────────────────────────────────────────────────────
+const SUBJECT_KEYWORDS = {
+  'Science':       ['photosynthesis','ஒளிச்சேர்க்கை','newton','நியூட்டன்','physics','chemistry','biology','வேதியியல்','இயற்பியல்','உயிரியல்','cell','atom','force','energy','மின்','acid','base','molecule','dna','ecosystem'],
+  'Maths':         ['equation','கணக்கு','algebra','geometry','triangle','circle','fraction','decimal','percentage','area','volume','angle','theorem','proof','number','கணிதம்'],
+  'Tamil':         ['இலக்கணம்','கவிதை','சங்கம்','தொல்காப்பியம்','நன்னூல்','உயிர்','மெய்','திணை','குறள்','thirukkural','poem','இலக்கியம்','grammar','தமிழ்'],
+  'Social':        ['history','geography','civics','economics','வரலாறு','புவியியல்','அரசியல்','பொருளாதாரம்','map','river','mountain','empire','revolution','constitution'],
+  'English':       ['grammar','tense','verb','noun','adjective','essay','comprehension','vocabulary','spelling','poem','prose'],
+  'Computer':      ['computer','கணினி','software','hardware','program','algorithm','internet','network','data','storage'],
+  'AI':            ['ai','artificial intelligence','machine learning','prompt','chatgpt','robot','automation','deep learning','neural','dataset'],
+};
+
+function detectSubject(question) {
+  const lower = question.toLowerCase();
+  for (const [subject, keywords] of Object.entries(SUBJECT_KEYWORDS)) {
+    if (keywords.some(kw => lower.includes(kw))) return subject;
+  }
+  return 'Other';
+}
+
+module.exports.detectSubject = detectSubject;

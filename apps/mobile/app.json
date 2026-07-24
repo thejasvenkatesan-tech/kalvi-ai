@@ -15,10 +15,29 @@
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.INTERNET"
+      ],
+      "package": "com.kalviai.app"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e1f4fbbd-d3e4-4356-8ff0-c7b671572fa3"
+      }
+    },
+    "plugins": [
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Allow கல்வி.AI to use your microphone for voice questions",
+          "speechRecognitionPermission": "Allow கல்வி.AI to recognize your speech"
+        }
+      ]
+    ]
   }
 }
