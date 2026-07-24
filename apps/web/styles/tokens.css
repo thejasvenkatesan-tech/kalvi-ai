@@ -1,0 +1,15 @@
+:root {
+  --blue:          #1B3A6B;
+  --blue-light:    #E6EEF8;
+  --gold:          #E8A020;
+  --gold-light:    #FDF3E0;
+  --terra:         #C45C3A;
+  --terra-light:   #FAEAE4;
+  --cream:         #F7F3ED;
+  --white:         #FFFFFF;
+  --ink:           #1A1612;
+  --muted:         #6B6560;
+  --border:        #E2DDD7;
+  --success:       #2D7A5F;
+  --success-light: #E1F0E9;
+}
