@@ -208,7 +208,7 @@ export default function VidhuScreen({ apiKey, studentClass = "8", onSaveReply, o
     setTranslating(t => ({ ...t, [msgId]: true }));
     try {
       const res = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent?key=${apiKeyRef.current}`,
+      'https://kalvi-ai-dashboard.vercel.app/api/gemini',
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

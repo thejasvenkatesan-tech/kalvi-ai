@@ -7,7 +7,11 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSSpeechRecognitionUsageDescription": "Allow கல்வி.AI to recognize your speech",
+        "NSMicrophoneUsageDescription": "Allow கல்வி.AI to use your microphone for voice questions"
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -27,7 +31,10 @@
     },
     "extra": {
       "supabaseUrl": "https://ekvlywtjqjhylhzyuoum.supabase.co",
-      "supabaseAnonKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVrdmx5d3RqcWpoeWxoenl1b3VtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQ4ODAxNzMsImV4cCI6MjEwMDQ1NjE3M30.WO3VYzfUV1ZRoSXfsR9EFnnK8THUKFJoq6Y7nwtb__Y"
+      "supabaseAnonKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVrdmx5d3RqcWpoeWxoenl1b3VtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQ4ODAxNzMsImV4cCI6MjEwMDQ1NjE3M30.WO3VYzfUV1ZRoSXfsR9EFnnK8THUKFJoq6Y7nwtb__Y",
+      "eas": {
+        "projectId": "e1f4fbbd-d3e4-4356-8ff0-c7b671572fa3"
+      }
     },
     "plugins": [
       [
