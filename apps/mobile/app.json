@@ -37,7 +37,8 @@
           "microphonePermission": "Allow கல்வி.AI to use your microphone for voice questions",
           "speechRecognitionPermission": "Allow கல்வி.AI to recognize your speech"
         }
-      ]
+      ],
+      "expo-secure-store"
     ]
   }
 }

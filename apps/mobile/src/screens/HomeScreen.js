@@ -12,7 +12,7 @@ export default function HomeScreen({ student, questionsAsked, savedCount, setTab
         <View style={s.welcome}>
           <Text style={s.welcomeText}>வணக்கம், {student.name}! 👋</Text>
           <Text style={s.schoolText}>{student.school?.name || student.school}</Text>
-          <Text style={s.classText}>{student.cls}ஆம் வகுப்பு • Roll No: {student.roll}</Text>
+          <Text style={s.classText}>{student.class || student.classSection || student.cls || ''}ஆம் வகுப்பு • Roll No: {student.roll_number || student.roll || ''}</Text>
         <TouchableOpacity onPress={onLogout} style={s.logoutBtn}>
           <Text style={s.logoutText}>🚪 வெளியேறு</Text>
         </TouchableOpacity>

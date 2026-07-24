@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import * as SecureStore from "expo-secure-store";
 import { View, Text, TouchableOpacity, StyleSheet, Platform } from "react-native";
 import { SafeAreaProvider, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { StatusBar } from "expo-status-bar";
@@ -20,6 +21,7 @@ const TABS = [
 function AppContent() {
   const insets = useSafeAreaInsets();
   const [student, setStudent]             = useState(null);
+  const [authLoading, setAuthLoading]     = useState(true);
   const [tab, setTab]                     = useState("home");
   const [savedReplies, setSavedReplies]   = useState([]);
   const [activeMission, setActiveMission] = useState(null);
@@ -54,6 +56,24 @@ function AppContent() {
     setQuestionsAsked(q => q + 1);
   }
 
+  // Check saved session on app start
+  useEffect(() => {
+    async function checkSavedSession() {
+      try {
+        const saved = await SecureStore.getItemAsync('kalviai_student');
+        if (saved) {
+          const studentData = JSON.parse(saved);
+          setStudent(studentData);
+        }
+      } catch (e) {
+        console.log('No saved session');
+      } finally {
+        setAuthLoading(false);
+      }
+    }
+    checkSavedSession();
+  }, []);
+
   useEffect(() => {
     if (student?.id) loadStudentData(student.id);
   }, [student?.id]);
@@ -76,7 +96,10 @@ function AppContent() {
     if (student) setQuestionsAsked(student.questions_asked || 0);
   }
 
-  function onLogout() {
+  async function onLogout() {
+    try {
+      await SecureStore.deleteItemAsync('kalviai_student');
+    } catch (e) {}
     setStudent(null);
     setTab('home');
     setSavedReplies([]);
@@ -84,7 +107,28 @@ function AppContent() {
     setUnreadSaved(0);
   }
 
-  if (!student) return <OnboardingScreen onDone={setStudent} />;
+  async function handleLogin(studentData) {
+    setStudent(studentData);
+    try {
+      await SecureStore.setItemAsync('kalviai_student', JSON.stringify(studentData));
+    } catch (e) {
+      console.log('Could not save session');
+    }
+  }
+
+  // Show loading screen while checking saved session
+  if (authLoading) {
+    return (
+      <SafeAreaProvider>
+        <View style={{ flex: 1, backgroundColor: '#1B3A6B', alignItems: 'center', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 48 }}>🦉</Text>
+          <Text style={{ fontSize: 22, fontWeight: '800', color: '#fff', marginTop: 12 }}>கல்வி.AI</Text>
+        </View>
+      </SafeAreaProvider>
+    );
+  }
+
+  if (!student) return <OnboardingScreen onDone={handleLogin} />;
 
   return (
     <View style={s.root}>
