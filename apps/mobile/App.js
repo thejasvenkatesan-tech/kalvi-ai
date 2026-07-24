@@ -7,7 +7,7 @@ import VidhuScreen    from "./src/screens/VidhuScreen";
 import SavedScreen    from "./src/screens/SavedScreen";
 import { colors, spacing, fontSizes } from "./src/constants/tokens";
 
-const GEMINI_API_KEY = "AQ.Ab8RN6K3QFwE3e5P2DYURV-TMw6NZxPdJ1r5HIqdl8euDt0Jiw"; // dev only
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY || ""; // dev only
 
 const TABS = [
   { id: "home",  label: "முகப்பு", icon: "🏠" },
