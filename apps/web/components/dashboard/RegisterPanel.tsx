@@ -1,39 +1,77 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { supabase, registerStudent, getStudents } from '@/lib/supabase'
 
-const EXISTING_STUDENTS = [
-  { roll: '001', name: 'பிரியா',      cls: '8', pin: '1234' },
-  { roll: '002', name: 'அர்ஜுன்',    cls: '8', pin: '2345' },
-  { roll: '003', name: 'கவிதா',      cls: '8', pin: '3456' },
-  { roll: '004', name: 'முருகன்',    cls: '8', pin: '4567' },
-  { roll: '005', name: 'சரண்யா',    cls: '8', pin: '5678' },
-  { roll: '006', name: 'விக்ரம்',    cls: '8', pin: '6789' },
-  { roll: '007', name: 'தேவி',       cls: '8', pin: '7890' },
-  { roll: '008', name: 'கார்த்திக்', cls: '8', pin: '8901' },
-]
+const SCHOOL_CODE = 'KA8042'
 
 function generatePIN() {
   return String(Math.floor(1000 + Math.random() * 9000))
 }
 
-export default function RegisterPanel({ teacher }: { teacher: { className: string; schoolCode: string } }) {
-  const [students, setStudents] = useState(EXISTING_STUDENTS)
-  const [name, setName]         = useState('')
-  const [roll, setRoll]         = useState('')
-  const [cls, setCls]           = useState('8')
-  const [pin, setPin]           = useState(generatePIN())
-  const [saved, setSaved]       = useState(false)
-  const [showPins, setShowPins] = useState(false)
+const CLASS_SECTIONS = [
+  '6A','6B','6C',
+  '7A','7B','7C',
+  '8A','8B','8C',
+  '9A','9B','9C',
+  '10A','10B','10C',
+  '11A','11B','11C',
+  '12A','12B','12C',
+]
 
-  function addStudent() {
+export default function RegisterPanel({ teacher }: { teacher: { className: string; schoolCode: string } }) {
+  const [students, setStudents]   = useState<any[]>([])
+  const [loading, setLoading]     = useState(true)
+  const [name, setName]           = useState('')
+  const [roll, setRoll]           = useState('')
+  const [cls, setCls]             = useState('8')
+  const [pin, setPin]             = useState(generatePIN())
+  const [classSection, setClassSection] = useState('8A')
+  const [saving, setSaving]       = useState(false)
+  const [saved, setSaved]         = useState(false)
+  const [error, setError]         = useState('')
+  const [showPins, setShowPins]   = useState(false)
+  const [schoolId, setSchoolId]   = useState('')
+
+  useEffect(() => {
+    loadSchoolAndStudents()
+  }, [])
+
+  async function loadSchoolAndStudents() {
+    setLoading(true)
+    // Get school
+    const { data: school } = await supabase
+      .from('schools')
+      .select('id')
+      .eq('code', SCHOOL_CODE)
+      .single()
+
+    if (school) {
+      setSchoolId(school.id)
+      const { data } = await getStudents(school.id)
+      if (data) setStudents(data)
+    }
+    setLoading(false)
+  }
+
+  async function addStudent() {
     if (!name.trim() || !roll.trim()) return
-    setStudents(s => [...s, { roll: roll.trim(), name: name.trim(), cls, pin }])
-    setName('')
-    setRoll('')
-    setPin(generatePIN())
-    setSaved(true)
-    setTimeout(() => setSaved(false), 2000)
+    setError('')
+    setSaving(true)
+
+    const { data, error } = await registerStudent(schoolId, name.trim(), roll.trim(), classSection, pin)
+
+    if (error) {
+      setError(error.message || 'சேர்க்க முடியவில்லை')
+    } else {
+      setStudents(s => [...s, data])
+      setName('')
+      setRoll('')
+      setPin(generatePIN())
+      setSaved(true)
+      setTimeout(() => setSaved(false), 2000)
+    }
+    setSaving(false)
   }
 
   function printSlips() {
@@ -65,8 +103,8 @@ ${students.map(s => `
     <div class="slip-title">🦉 கல்வி.AI Login</div>
     <div class="slip-school">${teacher.schoolCode} • ${teacher.className}</div>
     <div class="slip-row"><span class="slip-label">பெயர்</span><span class="slip-value">${s.name}</span></div>
-    <div class="slip-row"><span class="slip-label">Roll No</span><span class="slip-value">${s.roll}</span></div>
-    <div class="slip-pin">${s.pin}</div>
+    <div class="slip-row"><span class="slip-label">Roll No</span><span class="slip-value">${s.roll_number}</span></div>
+    <div class="slip-pin">${s.pin_hash}</div>
     <div class="slip-warning">⚠️ இந்த PIN-ஐ யாரிடமும் சொல்லாதே</div>
   </div>
 `).join('')}
@@ -87,7 +125,7 @@ ${students.map(s => `
         </div>
       </div>
 
-      {/* Add student form */}
+      {/* Add student */}
       <div style={{ background: '#fff', borderRadius: 12, padding: 20, border: '1px solid #E2DDD7', marginBottom: 20 }}>
         <div style={{ fontSize: 15, fontWeight: 700, color: '#1B3A6B', marginBottom: 16 }}>➕ புதிய மாணவர் சேர்க்க</div>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 80px 120px', gap: 12, marginBottom: 12 }}>
@@ -104,30 +142,31 @@ ${students.map(s => `
               style={{ width: '100%', padding: '10px 12px', borderRadius: 8, border: '1px solid #E2DDD7', fontSize: 14, boxSizing: 'border-box' as const, outline: 'none' }} />
           </div>
           <div>
-            <div style={{ fontSize: 12, color: '#6B6560', marginBottom: 6, fontWeight: 600 }}>வகுப்பு</div>
-            <select value={cls} onChange={e => setCls(e.target.value)}
+            <div style={{ fontSize: 12, color: '#6B6560', marginBottom: 6, fontWeight: 600 }}>வகுப்பு & பிரிவு</div>
+            <select value={classSection} onChange={e => setClassSection(e.target.value)}
               style={{ width: '100%', padding: '10px 8px', borderRadius: 8, border: '1px solid #E2DDD7', fontSize: 14, outline: 'none' }}>
-              {['6','7','8','9','10','11','12'].map(c => <option key={c} value={c}>{c}</option>)}
+              {CLASS_SECTIONS.map(cs => <option key={cs} value={cs}>{cs}</option>)}
             </select>
           </div>
           <div>
-            <div style={{ fontSize: 12, color: '#6B6560', marginBottom: 6, fontWeight: 600 }}>PIN (auto)</div>
+            <div style={{ fontSize: 12, color: '#6B6560', marginBottom: 6, fontWeight: 600 }}>PIN</div>
             <div style={{ display: 'flex', gap: 6 }}>
               <input value={pin} onChange={e => setPin(e.target.value.slice(0,4))}
                 maxLength={4}
-                style={{ flex: 1, padding: '10px 12px', borderRadius: 8, border: '1px solid #E2DDD7', fontSize: 16, fontWeight: 700, letterSpacing: 4, outline: 'none' }} />
+                style={{ flex: 1, padding: '10px 8px', borderRadius: 8, border: '1px solid #E2DDD7', fontSize: 16, fontWeight: 700, letterSpacing: 4, outline: 'none' }} />
               <button onClick={() => setPin(generatePIN())}
                 style={{ padding: '10px 8px', borderRadius: 8, border: '1px solid #E2DDD7', background: '#F7F3ED', cursor: 'pointer', fontSize: 14 }}>🔄</button>
             </div>
           </div>
         </div>
-        <button onClick={addStudent}
-          style={{ background: '#1B3A6B', color: '#fff', border: 'none', padding: '11px 24px', borderRadius: 8, fontWeight: 700, fontSize: 14, cursor: 'pointer' }}>
-          {saved ? '✅ சேமிக்கப்பட்டது!' : '➕ மாணவரை சேர்க்க'}
+        {error && <div style={{ color: '#C45C3A', fontSize: 13, marginBottom: 8 }}>{error}</div>}
+        <button onClick={addStudent} disabled={saving}
+          style={{ background: saving ? '#6B6560' : '#1B3A6B', color: '#fff', border: 'none', padding: '11px 24px', borderRadius: 8, fontWeight: 700, fontSize: 14, cursor: 'pointer' }}>
+          {saving ? 'சேர்க்கிறோம்...' : saved ? '✅ சேமிக்கப்பட்டது!' : '➕ மாணவரை சேர்க்க'}
         </button>
       </div>
 
-      {/* Student list + print */}
+      {/* Student list */}
       <div style={{ background: '#fff', borderRadius: 12, border: '1px solid #E2DDD7', overflow: 'hidden' }}>
         <div style={{ padding: '16px 20px', borderBottom: '1px solid #E2DDD7', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div style={{ fontSize: 15, fontWeight: 700, color: '#1B3A6B' }}>
@@ -144,31 +183,40 @@ ${students.map(s => `
             </button>
           </div>
         </div>
-        <table style={{ width: '100%', borderCollapse: 'collapse' }}>
-          <thead>
-            <tr style={{ background: '#F7F3ED', borderBottom: '1px solid #E2DDD7' }}>
-              {['Roll', 'பெயர்', 'வகுப்பு', 'PIN'].map(h => (
-                <th key={h} style={{ padding: '10px 16px', textAlign: 'left', fontSize: 12, fontWeight: 700, color: '#6B6560', textTransform: 'uppercase' }}>{h}</th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {students.map((s, i) => (
-              <tr key={s.roll} style={{ borderBottom: i < students.length - 1 ? '1px solid #E2DDD7' : 'none' }}>
-                <td style={{ padding: '10px 16px', fontSize: 13, color: '#6B6560' }}>{s.roll}</td>
-                <td style={{ padding: '10px 16px', fontSize: 14, fontWeight: 600, color: '#1A1612' }}>{s.name}</td>
-                <td style={{ padding: '10px 16px', fontSize: 13, color: '#6B6560' }}>{s.cls}ஆம்</td>
-                <td style={{ padding: '10px 16px', fontSize: 16, fontWeight: 800, color: '#1B3A6B', letterSpacing: 4 }}>
-                  {showPins ? s.pin : '••••'}
-                </td>
+
+        {loading ? (
+          <div style={{ padding: 24, textAlign: 'center', color: '#6B6560' }}>ஏற்றுகிறோம்...</div>
+        ) : students.length === 0 ? (
+          <div style={{ padding: 24, textAlign: 'center', color: '#6B6560' }}>
+            இன்னும் மாணவர்கள் சேர்க்கவில்லை — மேலே சேர்க்கவும்
+          </div>
+        ) : (
+          <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+            <thead>
+              <tr style={{ background: '#F7F3ED', borderBottom: '1px solid #E2DDD7' }}>
+                {['Roll', 'பெயர்', 'வகுப்பு', 'PIN'].map(h => (
+                  <th key={h} style={{ padding: '10px 16px', textAlign: 'left', fontSize: 12, fontWeight: 700, color: '#6B6560', textTransform: 'uppercase' }}>{h}</th>
+                ))}
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {students.map((s, i) => (
+                <tr key={s.id} style={{ borderBottom: i < students.length - 1 ? '1px solid #E2DDD7' : 'none' }}>
+                  <td style={{ padding: '10px 16px', fontSize: 13, color: '#6B6560' }}>{s.roll_number}</td>
+                  <td style={{ padding: '10px 16px', fontSize: 14, fontWeight: 600, color: '#1A1612' }}>{s.name}</td>
+                  <td style={{ padding: '10px 16px', fontSize: 13, color: '#6B6560' }}>{s.class}ஆம்</td>
+                  <td style={{ padding: '10px 16px', fontSize: 16, fontWeight: 800, color: '#1B3A6B', letterSpacing: 4 }}>
+                    {showPins ? s.pin_hash : '••••'}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )}
       </div>
 
       <div style={{ background: '#E1F0E9', borderRadius: 10, padding: 12, marginTop: 16, fontSize: 13, color: '#2D7A5F' }}>
-        💡 Login Slips print செய்து, ஒவ்வொரு மாணவருக்கும் ஒரு slip கொடுங்கள். மாணவர்கள் Roll Number + PIN பயன்படுத்தி login செய்வார்கள்.
+        💡 Login Slips print செய்து ஒவ்வொரு மாணவருக்கும் கொடுங்கள். Roll Number + PIN பயன்படுத்தி login செய்வார்கள்.
       </div>
     </div>
   )
