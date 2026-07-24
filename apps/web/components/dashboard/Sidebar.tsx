@@ -8,19 +8,23 @@ const NAV = [
 ]
 
 interface Props {
-  teacher: { name: string; school: string; className: string; schoolCode: string }
+  teacher: { name: string; school: string; className: string; schoolCode: string; role?: string }
   activePanel: string
   setActivePanel: (p: any) => void
+  onLogout: () => void
 }
 
-export default function Sidebar({ teacher, activePanel, setActivePanel }: Props) {
+export default function Sidebar({ teacher, activePanel, setActivePanel, onLogout }: Props) {
   return (
     <aside style={{ width: 240, background: '#1B3A6B', display: 'flex', flexDirection: 'column', minHeight: '100vh', position: 'sticky', top: 0 }}>
+
+      {/* Brand */}
       <div style={{ padding: '24px 20px', borderBottom: '1px solid rgba(255,255,255,0.1)' }}>
         <div style={{ fontSize: 20, fontWeight: 800, color: '#fff' }}>கல்வி.AI 🦉</div>
         <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.6)', marginTop: 4 }}>Teacher Dashboard</div>
       </div>
 
+      {/* Teacher info */}
       <div style={{ padding: '16px 20px', borderBottom: '1px solid rgba(255,255,255,0.1)' }}>
         <div style={{ width: 40, height: 40, borderRadius: '50%', background: '#E8A020', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18, marginBottom: 10 }}>
           👨‍🏫
@@ -32,8 +36,14 @@ export default function Sidebar({ teacher, activePanel, setActivePanel }: Props)
           <span style={{ fontSize: 10, color: 'rgba(255,255,255,0.6)' }}>School Code: </span>
           <span style={{ fontSize: 12, fontWeight: 700, color: '#E8A020' }}>{teacher.schoolCode}</span>
         </div>
+        {teacher.role === 'principal' && (
+          <div style={{ marginTop: 6, background: '#E8A020', borderRadius: 8, padding: '4px 10px', display: 'inline-block' }}>
+            <span style={{ fontSize: 11, fontWeight: 700, color: '#fff' }}>👑 Principal</span>
+          </div>
+        )}
       </div>
 
+      {/* Nav */}
       <nav style={{ padding: '12px 0', flex: 1 }}>
         {NAV.map(item => (
           <button
@@ -54,8 +64,14 @@ export default function Sidebar({ teacher, activePanel, setActivePanel }: Props)
         ))}
       </nav>
 
+      {/* Logout */}
       <div style={{ padding: '16px 20px', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
-        <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.4)', textAlign: 'center' }}>Powered by Daruma™</div>
+        <button
+          onClick={onLogout}
+          style={{ width: '100%', padding: '10px 16px', borderRadius: 8, border: '1px solid rgba(255,255,255,0.2)', background: 'transparent', color: 'rgba(255,255,255,0.7)', cursor: 'pointer', fontSize: 13, fontWeight: 600, textAlign: 'left' }}>
+          🚪 வெளியேறு (Logout)
+        </button>
+        <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.3)', textAlign: 'center', marginTop: 10 }}>Powered by Daruma™</div>
       </div>
     </aside>
   )

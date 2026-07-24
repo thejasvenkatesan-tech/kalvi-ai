@@ -1,17 +1,7 @@
 'use client'
 
-import { useState } from 'react'
-
-const STUDENTS = [
-  { id: 1, name: 'பிரியா',      roll: '001', questions: 34, topSubject: 'Science', lastActive: 'இன்று',           status: 'active'   },
-  { id: 2, name: 'அர்ஜுன்',    roll: '002', questions: 28, topSubject: 'Maths',   lastActive: 'இன்று',           status: 'active'   },
-  { id: 3, name: 'கவிதா',      roll: '003', questions: 22, topSubject: 'Tamil',   lastActive: 'நேற்று',          status: 'active'   },
-  { id: 4, name: 'முருகன்',    roll: '004', questions: 18, topSubject: 'Science', lastActive: 'நேற்று',          status: 'active'   },
-  { id: 5, name: 'சரண்யா',    roll: '005', questions: 12, topSubject: 'Social',  lastActive: '2 நாள் முன்',     status: 'inactive' },
-  { id: 6, name: 'விக்ரம்',    roll: '006', questions: 8,  topSubject: 'English', lastActive: '3 நாள் முன்',     status: 'inactive' },
-  { id: 7, name: 'தேவி',       roll: '007', questions: 3,  topSubject: 'Science', lastActive: '5 நாள் முன்',     status: 'atrisk'   },
-  { id: 8, name: 'கார்த்திக்', roll: '008', questions: 0,  topSubject: '—',       lastActive: 'உள்நுழையவில்லை', status: 'atrisk'   },
-]
+import { useState, useEffect } from 'react'
+import { supabase } from '@/lib/supabase'
 
 const SUBJECT_COLORS: Record<string, { color: string; bg: string }> = {
   Science: { color: '#2D7A5F', bg: '#E1F0E9' },
@@ -19,6 +9,7 @@ const SUBJECT_COLORS: Record<string, { color: string; bg: string }> = {
   Tamil:   { color: '#E8A020', bg: '#FDF3E0' },
   Social:  { color: '#C45C3A', bg: '#FAEAE4' },
   English: { color: '#1B3A6B', bg: '#E6EEF8' },
+  AI:      { color: '#2D7A5F', bg: '#E1F0E9' },
   '—':     { color: '#6B6560', bg: '#F7F3ED' },
 }
 
@@ -28,30 +19,78 @@ const STATUS: Record<string, { bg: string; color: string; label: string }> = {
   atrisk:   { bg: '#FAEAE4', color: '#C45C3A', label: 'கவனம் தேவை' },
 }
 
-export default function StudentsPanel({ teacher }: { teacher: { className: string; schoolCode: string } }) {
-  const [search, setSearch] = useState('')
-  const [filter, setFilter] = useState('all')
+export default function StudentsPanel({ teacher }: { teacher: { className: string; schoolCode: string; schoolId?: string } }) {
+  const [students, setStudents]   = useState<any[]>([])
+  const [topSubjects, setTopSubjects] = useState<Record<string, string>>({})
+  const [loading, setLoading]     = useState(true)
+  const [search, setSearch]       = useState('')
+  const [filter, setFilter]       = useState('all')
 
-  const filtered = STUDENTS.filter(s => {
-    const matchSearch = s.name.includes(search) || s.roll.includes(search)
-    const matchFilter = filter === 'all' || s.status === filter
+  useEffect(() => { loadData() }, [])
+
+  async function loadData() {
+    setLoading(true)
+    if (!teacher.schoolId) { setLoading(false); return }
+
+    const { data } = await supabase
+      .from('students')
+      .select('*')
+      .eq('school_id', teacher.schoolId)
+      .order('roll_number')
+
+    if (data) setStudents(data)
+
+    // Get top subject per student from topic_searches
+    const { data: searches } = await supabase
+      .from('topic_searches')
+      .select('student_id, subject')
+      .eq('school_id', teacher.schoolId)
+
+    if (searches) {
+      const subjectMap: Record<string, Record<string, number>> = {}
+      searches.forEach(s => {
+        if (!subjectMap[s.student_id]) subjectMap[s.student_id] = {}
+        subjectMap[s.student_id][s.subject] = (subjectMap[s.student_id][s.subject] || 0) + 1
+      })
+      const topMap: Record<string, string> = {}
+      Object.entries(subjectMap).forEach(([studentId, subjects]) => {
+        topMap[studentId] = Object.entries(subjects).sort((a, b) => b[1] - a[1])[0]?.[0] || '—'
+      })
+      setTopSubjects(topMap)
+    }
+
+    setLoading(false)
+  }
+
+  function getStatus(s: any) {
+    if (!s.last_active) return 'atrisk'
+    const days = (Date.now() - new Date(s.last_active).getTime()) / 86400000
+    if (days > 5) return 'atrisk'
+    if (days > 2) return 'inactive'
+    return 'active'
+  }
+
+  const filtered = students.filter(s => {
+    const matchSearch = s.name?.includes(search) || s.roll_number?.includes(search)
+    const matchFilter = filter === 'all' || getStatus(s) === filter
     return matchSearch && matchFilter
   })
+
+  const activeCount  = students.filter(s => getStatus(s) === 'active').length
+  const atRiskCount  = students.filter(s => getStatus(s) === 'atrisk').length
 
   return (
     <div>
       <div style={{ marginBottom: 24 }}>
-        <div style={{ fontSize: 22, fontWeight: 800, color: '#1B3A6B' }}>மாணவர்கள் — {teacher.className}</div>
-        <div style={{ fontSize: 13, color: '#6B6560', marginTop: 4 }}>
-          School Code: <strong>{teacher.schoolCode}</strong>
-        </div>
+        <div style={{ fontSize: 22, fontWeight: 800, color: '#1B3A6B' }}>மாணவர்கள்</div>
+        <div style={{ fontSize: 13, color: '#6B6560', marginTop: 4 }}>School Code: <strong>{teacher.schoolCode}</strong></div>
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12, marginBottom: 20 }}>
         {[
-          { label: 'மொத்தம்',     value: STUDENTS.length,                                color: '#1B3A6B', bg: '#E6EEF8' },
-          { label: 'Active இன்று', value: STUDENTS.filter(s => s.status==='active').length, color: '#2D7A5F', bg: '#E1F0E9' },
-          { label: 'கவனம் தேவை', value: STUDENTS.filter(s => s.status==='atrisk').length, color: '#C45C3A', bg: '#FAEAE4' },
+          { label: 'மொத்தம்',     value: students.length, color: '#1B3A6B', bg: '#E6EEF8' },
+          { label: 'Active இன்று', value: activeCount,     color: '#2D7A5F', bg: '#E1F0E9' },
+          { label: 'கவனம் தேவை', value: atRiskCount,     color: '#C45C3A', bg: '#FAEAE4' },
         ].map(c => (
           <div key={c.label} style={{ background: c.bg, borderRadius: 12, padding: 16, textAlign: 'center' }}>
             <div style={{ fontSize: 28, fontWeight: 800, color: c.color }}>{c.value}</div>
@@ -74,43 +113,55 @@ export default function StudentsPanel({ teacher }: { teacher: { className: strin
       </div>
 
       <div style={{ background: '#fff', borderRadius: 12, border: '1px solid #E2DDD7', overflow: 'hidden', marginBottom: 16 }}>
-        <table style={{ width: '100%', borderCollapse: 'collapse' }}>
-          <thead>
-            <tr style={{ background: '#F7F3ED', borderBottom: '1px solid #E2DDD7' }}>
-              {['Roll', 'பெயர்', 'கேள்விகள்', 'அதிக பாடம்', 'கடைசியாக', 'நிலை'].map(h => (
-                <th key={h} style={{ padding: '12px 16px', textAlign: 'left', fontSize: 12, fontWeight: 700, color: '#6B6560', textTransform: 'uppercase' }}>{h}</th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {filtered.map((s, i) => {
-              const sc = SUBJECT_COLORS[s.topSubject] || SUBJECT_COLORS['—']
-              return (
-                <tr key={s.id} style={{ borderBottom: i < filtered.length - 1 ? '1px solid #E2DDD7' : 'none' }}>
-                  <td style={{ padding: '12px 16px', fontSize: 13, color: '#6B6560' }}>{s.roll}</td>
-                  <td style={{ padding: '12px 16px', fontSize: 14, fontWeight: 600, color: '#1A1612' }}>{s.name}</td>
-                  <td style={{ padding: '12px 16px', fontSize: 16, fontWeight: 800, color: '#1B3A6B' }}>{s.questions}</td>
-                  <td style={{ padding: '12px 16px' }}>
-                    <span style={{ background: sc.bg, color: sc.color, padding: '3px 10px', borderRadius: 20, fontSize: 12, fontWeight: 600 }}>{s.topSubject}</span>
-                  </td>
-                  <td style={{ padding: '12px 16px', fontSize: 12, color: '#6B6560' }}>{s.lastActive}</td>
-                  <td style={{ padding: '12px 16px' }}>
-                    <span style={{ background: STATUS[s.status].bg, color: STATUS[s.status].color, padding: '3px 10px', borderRadius: 20, fontSize: 11, fontWeight: 700 }}>
-                      {STATUS[s.status].label}
-                    </span>
-                  </td>
-                </tr>
-              )
-            })}
-          </tbody>
-        </table>
+        {loading ? (
+          <div style={{ padding: 24, textAlign: 'center', color: '#6B6560' }}>ஏற்றுகிறோம்...</div>
+        ) : filtered.length === 0 ? (
+          <div style={{ padding: 24, textAlign: 'center', color: '#6B6560' }}>
+            {students.length === 0 ? 'இன்னும் மாணவர்கள் பதிவு செய்யவில்லை — பதிவு செய் tab-ல் சேர்க்கவும்' : 'தேடல் பொருந்தவில்லை'}
+          </div>
+        ) : (
+          <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+            <thead>
+              <tr style={{ background: '#F7F3ED', borderBottom: '1px solid #E2DDD7' }}>
+                {['Roll', 'பெயர்', 'வகுப்பு', 'கேள்விகள்', 'அதிக பாடம்', 'கடைசியாக', 'நிலை'].map(h => (
+                  <th key={h} style={{ padding: '12px 16px', textAlign: 'left', fontSize: 12, fontWeight: 700, color: '#6B6560', textTransform: 'uppercase' }}>{h}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {filtered.map((s, i) => {
+                const status = getStatus(s)
+                const topSubject = topSubjects[s.id] || '—'
+                const sc = SUBJECT_COLORS[topSubject] || SUBJECT_COLORS['—']
+                const lastActive = s.last_active ? new Date(s.last_active).toLocaleDateString('ta-IN') : 'உள்நுழையவில்லை'
+                return (
+                  <tr key={s.id} style={{ borderBottom: i < filtered.length - 1 ? '1px solid #E2DDD7' : 'none' }}>
+                    <td style={{ padding: '12px 16px', fontSize: 13, color: '#6B6560' }}>{s.roll_number}</td>
+                    <td style={{ padding: '12px 16px', fontSize: 14, fontWeight: 600, color: '#1A1612' }}>{s.name}</td>
+                    <td style={{ padding: '12px 16px', fontSize: 13, color: '#6B6560' }}>{s.class}</td>
+                    <td style={{ padding: '12px 16px', fontSize: 16, fontWeight: 800, color: '#1B3A6B' }}>{s.questions_asked || 0}</td>
+                    <td style={{ padding: '12px 16px' }}>
+                      <span style={{ background: sc.bg, color: sc.color, padding: '3px 10px', borderRadius: 20, fontSize: 12, fontWeight: 600 }}>{topSubject}</span>
+                    </td>
+                    <td style={{ padding: '12px 16px', fontSize: 12, color: '#6B6560' }}>{lastActive}</td>
+                    <td style={{ padding: '12px 16px' }}>
+                      <span style={{ background: STATUS[status].bg, color: STATUS[status].color, padding: '3px 10px', borderRadius: 20, fontSize: 11, fontWeight: 700 }}>
+                        {STATUS[status].label}
+                      </span>
+                    </td>
+                  </tr>
+                )
+              })}
+            </tbody>
+          </table>
+        )}
       </div>
 
-      {STUDENTS.filter(s => s.status === 'atrisk').length > 0 && (
+      {atRiskCount > 0 && students.length > 0 && (
         <div style={{ background: '#FAEAE4', border: '1px solid #C45C3A', borderRadius: 12, padding: 16 }}>
           <div style={{ fontSize: 14, fontWeight: 700, color: '#C45C3A', marginBottom: 6 }}>⚠️ கவனம் தேவைப்படும் மாணவர்கள்</div>
           <div style={{ fontSize: 13, color: '#6B6560' }}>
-            {STUDENTS.filter(s => s.status === 'atrisk').map(s => s.name).join(', ')} — விதுவிடம் கேள்விகள் கேட்கவில்லை.
+            {students.filter(s => getStatus(s) === 'atrisk').map(s => s.name).join(', ')} — விதுவிடம் கேள்விகள் கேட்கவில்லை.
           </div>
         </div>
       )}

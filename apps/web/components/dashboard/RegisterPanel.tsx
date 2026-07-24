@@ -128,7 +128,7 @@ ${students.map(s => `
       {/* Add student */}
       <div style={{ background: '#fff', borderRadius: 12, padding: 20, border: '1px solid #E2DDD7', marginBottom: 20 }}>
         <div style={{ fontSize: 15, fontWeight: 700, color: '#1B3A6B', marginBottom: 16 }}>➕ புதிய மாணவர் சேர்க்க</div>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 80px 120px', gap: 12, marginBottom: 12 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 100px 160px', gap: 12, marginBottom: 12 }}>
           <div>
             <div style={{ fontSize: 12, color: '#6B6560', marginBottom: 6, fontWeight: 600 }}>பெயர்</div>
             <input value={name} onChange={e => setName(e.target.value)}
@@ -153,7 +153,7 @@ ${students.map(s => `
             <div style={{ display: 'flex', gap: 6 }}>
               <input value={pin} onChange={e => setPin(e.target.value.slice(0,4))}
                 maxLength={4}
-                style={{ flex: 1, padding: '10px 8px', borderRadius: 8, border: '1px solid #E2DDD7', fontSize: 16, fontWeight: 700, letterSpacing: 4, outline: 'none' }} />
+                style={{ flex: 1, padding: '10px 8px', borderRadius: 8, border: '1px solid #E2DDD7', fontSize: 16, fontWeight: 700, letterSpacing: 2, outline: 'none', minWidth: 0 }} />
               <button onClick={() => setPin(generatePIN())}
                 style={{ padding: '10px 8px', borderRadius: 8, border: '1px solid #E2DDD7', background: '#F7F3ED', cursor: 'pointer', fontSize: 14 }}>🔄</button>
             </div>
