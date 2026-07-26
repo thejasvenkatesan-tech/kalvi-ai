@@ -1,4 +1,6 @@
 import { useState, useRef, useEffect } from "react";
+import { Image } from "react-native";
+import * as FileSystem from "expo-file-system";
 import {
   View, Text, TextInput, TouchableOpacity, FlatList,
   StyleSheet, SafeAreaView, KeyboardAvoidingView, Platform,
@@ -17,9 +19,8 @@ try {
   console.log("Speech recognition not available in Expo Go");
 }
 import { colors, spacing, radii, fontSizes } from "../constants/tokens";
-import { askVidhu, getOfflineAnswer, MARK_SCHEMES } from "../utils/vidhu";
+import { askVidhu, getOfflineAnswer, MARK_SCHEMES, detectSubject } from "../utils/vidhu";
 import { logTopicSearch, saveReplyToDb, incrementQuestions } from "../utils/supabase";
-import { detectSubject } from "../utils/vidhu";
 
 const SUGGESTIONS = [
   "ஒளிச்சேர்க்கை என்றால் என்ன?",
@@ -124,7 +125,7 @@ const md = StyleSheet.create({
 });
 
 // ── Main Component ─────────────────────────────────────────────────────────
-export default function VidhuScreen({ apiKey, studentClass = "8", onSaveReply, onQuestionAsked, student }) {
+export default function VidhuScreen({ apiKey, studentClass = "8", onSaveReply, onQuestionAsked, student, showToast }) {
   const [msgs, setMsgs]               = useState([{
     id: "0", role: "assistant",
     content: "வணக்கம்! நான் விது 🦉\n\nபாடம் சம்பந்தமான எந்த கேள்வியும் கேட்கலாம் — தமிழில் அல்லது ஆங்கிலத்தில்!\n\nகணிதம், அறிவியல், தமிழ், சமூக அறிவியல், AI — எல்லாம் சொல்கிறேன்.\n\n🎤 குரலிலும் கேட்கலாம்!\n\n⚠️ நான் AI — தவறுகள் நடக்கலாம். எல்லா பதில்களையும் உன் ஆசிரியரிடம் உறுதி செய்துகொள்."
@@ -140,6 +141,8 @@ export default function VidhuScreen({ apiKey, studentClass = "8", onSaveReply, o
   const [listening, setListening]       = useState(false);
   const [voiceLang, setVoiceLang]       = useState("ta-IN");
   const [lastQuestion, setLastQuestion] = useState('');
+  const [diagrams, setDiagrams]           = useState({});
+  const [diagramLoading, setDiagramLoading] = useState({});
   const [lastAnswer, setLastAnswer]     = useState('');
 
   const listRef       = useRef();
@@ -248,6 +251,28 @@ export default function VidhuScreen({ apiKey, studentClass = "8", onSaveReply, o
       setMsgs(m => [...m, replyMsg]);
       setLastAnswer(reply);
       setOffline(false);
+      // Generate diagram for Science/Maths topics
+      const subject = detectSubject(text);
+      console.log('Diagram subject:', subject, 'for:', text.slice(0,30));
+      if (true) {  // Generate for all topics temporarily
+        // Extract the core topic from the question
+        const cleanTopic = text.replace(/explain|what is|tell me about|describe|how does|என்றால் என்ன|விளக்கு|பற்றி சொல்|எப்படி/gi, '').trim().slice(0, 80);
+        const diagramPrompt = `Simple educational diagram of: ${cleanTopic}. Colorful, clear scientific labels in English. Clean white background. No text like "Class 8", "AI", "Kalvi" or app names in the image. Scientific illustration style for school students.`;
+        setDiagramLoading(d => ({ ...d, [replyMsg.id]: true }));
+        fetch('https://kalvi-ai-dashboard.vercel.app/api/imagen', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ prompt: diagramPrompt })
+        }).then(r => r.json()).then(data => {
+          console.log('Diagram result:', data.imageUrl || data.error);
+          const url = data.imageUrl;
+          setDiagramLoading(d => ({ ...d, [replyMsg.id]: false }));
+          if (url) setDiagrams(d => ({ ...d, [replyMsg.id]: url }));
+        }).catch(e => { 
+          console.log('Diagram error:', e.message); 
+          setDiagramLoading(d => ({ ...d, [replyMsg.id]: false }));
+        });
+      }
       // Log to Supabase
       if (student?.id && student?.school?.id) {
         const subject = detectSubject(text);
@@ -310,7 +335,7 @@ export default function VidhuScreen({ apiKey, studentClass = "8", onSaveReply, o
           </View>
         )}
 
-        {/* English translation */}
+{/* English translation */}
         {!isUser && translations[item.id] && (
           <View style={s.translationBox}>
             <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 6 }}>
@@ -322,6 +347,34 @@ export default function VidhuScreen({ apiKey, studentClass = "8", onSaveReply, o
               </TouchableOpacity>
             </View>
             <SimpleMarkdown text={translations[item.id]} />
+          </View>
+        )}
+
+        {/* AI Diagram */}
+        {!isUser && diagrams[item.id] && (
+          <View style={{ marginLeft: 36, marginTop: 8, backgroundColor: '#fff', borderRadius: 12, padding: 12, borderWidth: 1, borderColor: '#E2DDD7' }}>
+            <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+              <Text style={{ fontSize: 12, color: '#1B3A6B', fontWeight: '700' }}>🎨 AI படம்</Text>
+              <TouchableOpacity
+                onPress={async () => {
+                  try {
+                    const url = diagrams[item.id];
+                    const FileSystem = require('expo-file-system');
+                    const fileUri = FileSystem.documentDirectory + 'kalviai_' + item.id + '.png';
+                    await FileSystem.downloadAsync(url, fileUri);
+                    const ML = require('expo-media-library');
+                    const { status } = await ML.requestPermissionsAsync();
+                    if (status === 'granted') {
+                      await ML.saveToLibraryAsync(fileUri);
+                      showToast('🖼️ Gallery-ல் சேமிக்கப்பட்டது!');
+                    }
+                  } catch(e) { showToast('📱 APK-ல் சேமிக்கலாம்!'); }
+                }}
+                style={{ backgroundColor: '#1B3A6B', borderRadius: 20, paddingHorizontal: 10, paddingVertical: 4 }}>
+                <Text style={{ fontSize: 11, color: '#fff', fontWeight: '600' }}>⬇️ சேமி</Text>
+              </TouchableOpacity>
+            </View>
+            <Image source={{ uri: diagrams[item.id] }} style={{ width: '100%', height: 220, borderRadius: 8 }} resizeMode="contain" />
           </View>
         )}
       </View>
@@ -381,6 +434,7 @@ export default function VidhuScreen({ apiKey, studentClass = "8", onSaveReply, o
       <KeyboardAvoidingView style={s.flex} behavior={Platform.OS === "ios" ? "padding" : "height"} keyboardVerticalOffset={90}>
         <FlatList
           ref={listRef}
+        extraData={{...diagrams, ...translations, ...diagramLoading}}
           data={msgs}
           keyExtractor={m => m.id}
           renderItem={renderMsg}
@@ -388,7 +442,13 @@ export default function VidhuScreen({ apiKey, studentClass = "8", onSaveReply, o
           onContentSizeChange={() => listRef.current?.scrollToEnd({ animated: true })}
         />
 
-        {loading && (
+        {Object.values(diagramLoading).some(v => v) && (
+        <View style={{ backgroundColor: '#E6EEF8', padding: 8, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 8 }}>
+          <Text style={{ fontSize: 14 }}>🎨</Text>
+          <Text style={{ fontSize: 12, color: '#1B3A6B', fontWeight: '600' }}>படம் உருவாக்குகிறோம்... (Creating diagram)</Text>
+        </View>
+      )}
+      {loading && (
           <View style={s.loadingRow}>
             <Text style={s.avatar}>🦉</Text>
             <View style={s.bubbleBot}><ActivityIndicator size="small" color={colors.muted} /></View>
@@ -505,7 +565,7 @@ const s = StyleSheet.create({
   suggestionsInner:     { paddingHorizontal: spacing.lg, gap: spacing.sm, alignItems: "center" },
   suggestion:           { paddingHorizontal: spacing.md, paddingVertical: spacing.xs, borderRadius: radii.full, borderWidth: 1, borderColor: colors.blue, backgroundColor: colors.blueLight },
   suggestionText:       { fontSize: fontSizes.sm, color: colors.blue },
-  saveBtn:              { marginHorizontal: spacing.md, marginBottom: spacing.xs, backgroundColor: colors.goldLight, borderRadius: radii.full, paddingVertical: spacing.sm, paddingHorizontal: spacing.lg, alignItems: "center", borderWidth: 1, borderColor: colors.gold },
+saveBtn:              { marginHorizontal: spacing.md, marginBottom: spacing.xs, backgroundColor: colors.goldLight, borderRadius: radii.full, paddingVertical: spacing.sm, paddingHorizontal: spacing.lg, alignItems: "center", borderWidth: 1, borderColor: colors.gold },
   saveBtnText:          { fontSize: fontSizes.sm, color: colors.gold, fontWeight: "700" },
   inputRow:             { flexDirection: "row", gap: spacing.sm, padding: spacing.md, borderTopWidth: 1, borderTopColor: colors.border, backgroundColor: colors.white, alignItems: "flex-end" },
   langToggle:           { width: 36, height: 36, borderRadius: radii.full, backgroundColor: colors.blueLight, alignItems: "center", justifyContent: "center", borderWidth: 1, borderColor: colors.border },

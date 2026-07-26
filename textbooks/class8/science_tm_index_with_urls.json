@@ -1,0 +1,2618 @@
+[
+  {
+    "type": "illustration",
+    "topic": "Emblem of Tamil Nadu",
+    "useful_for_students": true,
+    "description": "The official state emblem of Tamil Nadu, featuring the Srivilliputhur Andal Temple tower and the national emblem of India.",
+    "filename": "page001_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page001_img01.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Science and Technology Education",
+    "useful_for_students": true,
+    "description": "A cover image for a Class 8 Science textbook featuring a hand holding a glowing lightbulb with a gear inside, surrounded by various technological and scientific icons.",
+    "filename": "page005_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page005_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Analog Ammeter electrical instrument",
+    "useful_for_students": true,
+    "description": "An analog ammeter used for measuring electric current with multiple range terminals for 50mA, 500mA, and 5A.",
+    "filename": "page007_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page007_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "steam iron appliance",
+    "useful_for_students": true,
+    "description": "A steam iron releasing a cloud of steam while resting on a wooden surface.",
+    "filename": "page007_img91.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page007_img91.png"
+  },
+  {
+    "type": "photo",
+    "topic": "States of matter",
+    "useful_for_students": true,
+    "description": "A stack of three clear ice cubes melting on a white surface, illustrating the solid state of water.",
+    "filename": "page007_img92.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page007_img92.png"
+  },
+  {
+    "type": "photo",
+    "topic": "combustion and fire safety",
+    "useful_for_students": true,
+    "description": "A campfire burning in a forest setting, illustrating the process of combustion.",
+    "filename": "page007_img93.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page007_img93.png"
+  },
+  {
+    "type": "photo",
+    "topic": "digital light meter device",
+    "useful_for_students": true,
+    "description": "A digital light meter (lux meter) used for measuring the intensity of light in a given environment.",
+    "filename": "page008_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page008_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "British India copper coins",
+    "useful_for_students": true,
+    "description": "A collection of four identical 1912 British India 'One Quarter Anna' copper coins.",
+    "filename": "page008_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page008_img04.png"
+  },
+  {
+    "type": "photo",
+    "topic": "analog clock face",
+    "useful_for_students": true,
+    "description": "A close-up view of an analog clock face with Roman numerals and black hands.",
+    "filename": "page010_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page010_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Digital clock display",
+    "useful_for_students": true,
+    "description": "A digital clock displaying the date, time, day of the week, and ambient temperature.",
+    "filename": "page010_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page010_img02.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "spherical mirror reflection",
+    "useful_for_students": true,
+    "description": "A grayscale illustration showing a spherical surface with horizontal light reflections, often used to represent a convex or concave mirror.",
+    "filename": "page011_img22.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page011_img22.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Rubidium atomic clock",
+    "useful_for_students": true,
+    "description": "A laboratory-grade rubidium atomic clock mounted on a large heat sink with digital displays for temperature and supply voltage.",
+    "filename": "page011_img48.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page011_img48.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Royal Observatory Greenwich clock",
+    "useful_for_students": true,
+    "description": "A photograph of the Shepherd Gate Clock and standard length measures mounted on the exterior wall of the Royal Observatory in Greenwich.",
+    "filename": "page011_img50.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page011_img50.png"
+  },
+  {
+    "type": "text",
+    "topic": "History of timekeeping devices",
+    "useful_for_students": true,
+    "description": "This text provides an overview of the historical development of various timekeeping devices used by ancient civilizations.",
+    "filename": "page016_img11.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page016_img11.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Pressure and Surface Area",
+    "useful_for_students": true,
+    "description": "A yellow balloon is pressed against a bed of many thumbtacks to demonstrate how distributing force over a larger surface area prevents the balloon from popping.",
+    "filename": "page018_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page018_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "school children walking home",
+    "useful_for_students": true,
+    "description": "A group of school children wearing uniforms and carrying backpacks walking along a dirt path.",
+    "filename": "page018_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page018_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Air pressure experiment",
+    "useful_for_students": true,
+    "description": "An Erlenmeyer flask with a hard-boiled egg resting in the neck above extinguished matches, demonstrating the effect of air pressure.",
+    "filename": "page019_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page019_img01.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Electric field of sphere",
+    "useful_for_students": true,
+    "description": "An illustration showing a hand holding a yellow sphere with arrows representing the electric field lines directed inward toward the object.",
+    "filename": "page020_img59.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page020_img59.png"
+  },
+  {
+    "type": "photo",
+    "topic": "surface tension of water",
+    "useful_for_students": true,
+    "description": "A pink paperclip floating on the surface of water in a beaker, demonstrating the concept of surface tension.",
+    "filename": "page021_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page021_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "water strider insect",
+    "useful_for_students": true,
+    "description": "A water strider insect standing on the surface of a pond, demonstrating surface tension.",
+    "filename": "page021_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page021_img02.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Pascal's Law physics",
+    "useful_for_students": true,
+    "description": "An educational slide featuring a teacher character standing next to a blackboard with the text 'Pascal's Law' written on it.",
+    "filename": "page027_img10.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page027_img10.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "spherical mirrors geometry",
+    "useful_for_students": true,
+    "description": "A diagram illustrating the components of spherical mirrors, including the vertex, optical axis, and center of curvature for both concave and convex configurations.",
+    "filename": "page029_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page029_img01.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "spherical mirrors geometry",
+    "useful_for_students": true,
+    "description": "A diagram illustrating the components of spherical mirrors, including the vertex, optical axis, and center of curvature, showing how concave and convex mirrors are derived from a sphere.",
+    "filename": "page029_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page029_img02.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "spherical mirrors geometry",
+    "useful_for_students": true,
+    "description": "A diagram illustrating the components of spherical mirrors, including the vertex, optical axis, and center of curvature for both concave and convex configurations.",
+    "filename": "page029_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page029_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Solar cooker energy conversion",
+    "useful_for_students": true,
+    "description": "A parabolic solar cooker reflecting sunlight onto a cooking pot with a mountainous landscape in the background.",
+    "filename": "page029_img05.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page029_img05.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Concave and convex mirrors",
+    "useful_for_students": true,
+    "description": "A diagram illustrating the geometric properties of concave and convex mirrors, including the pole (P), center of curvature (C), and focal point.",
+    "filename": "page030_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page030_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "reflection in side mirror",
+    "useful_for_students": true,
+    "description": "A view of cars driving on a road as seen through a vehicle's side-view mirror, illustrating the concept of reflection.",
+    "filename": "page032_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page032_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "convex mirror reflection",
+    "useful_for_students": true,
+    "description": "A convex mirror installed on a winding mountain road, demonstrating how it provides a wider field of view for traffic safety.",
+    "filename": "page032_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page032_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "ENT medical examination",
+    "useful_for_students": true,
+    "description": "A doctor wearing a head mirror examines a patient's ear.",
+    "filename": "page032_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page032_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "ophthalmological eye examination",
+    "useful_for_students": true,
+    "description": "A medical professional uses a specialized lens and a tool to perform a detailed examination of a patient's eye.",
+    "filename": "page032_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page032_img04.png"
+  },
+  {
+    "type": "photo",
+    "topic": "reflection in plane mirror",
+    "useful_for_students": true,
+    "description": "A man shaving his face while looking at his reflection in a mirror, demonstrating the concept of lateral inversion and reflection.",
+    "filename": "page032_img05.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page032_img05.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Electric torch light source",
+    "useful_for_students": true,
+    "description": "A handheld electric torch emitting a beam of light against a blue background.",
+    "filename": "page032_img06.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page032_img06.png"
+  },
+  {
+    "type": "photo",
+    "topic": "reflection in curved mirrors",
+    "useful_for_students": true,
+    "description": "A comparison showing how a person's reflection appears upright in the convex back of a spoon and inverted in the concave bowl of a spoon.",
+    "filename": "page032_img07.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page032_img07.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Mount Hood reflection landscape",
+    "useful_for_students": true,
+    "description": "A scenic view of Mount Hood reflected in a calm lake, surrounded by a dense coniferous forest.",
+    "filename": "page033_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page033_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "water body and landscape",
+    "useful_for_students": true,
+    "description": "A landscape view of a calm water body with a sandy bank and a grassy, tree-lined slope in the background.",
+    "filename": "page034_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page034_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "kaleidoscope optical instrument",
+    "useful_for_students": true,
+    "description": "A collection of vintage-style kaleidoscopes with their corresponding colorful, symmetrical patterns displayed above them.",
+    "filename": "page035_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page035_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "submarine in the water",
+    "useful_for_students": true,
+    "description": "A military submarine traveling on the surface of the water with crew members visible on the deck.",
+    "filename": "page035_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page035_img02.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Periscope working principle",
+    "useful_for_students": true,
+    "description": "A diagram illustrating how a periscope uses two mirrors at 45-degree angles to allow a person to see over an obstacle.",
+    "filename": "page035_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page035_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "refraction of light",
+    "useful_for_students": true,
+    "description": "A pencil appears bent when partially submerged in a glass of water due to the refraction of light.",
+    "filename": "page036_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page036_img02.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Dispersion of white light",
+    "useful_for_students": true,
+    "description": "An illustration showing white light being dispersed into a spectrum by a prism and then recombined by a second inverted prism.",
+    "filename": "page037_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page037_img01.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Human respiratory system anatomy",
+    "useful_for_students": true,
+    "description": "A detailed anatomical diagram illustrating the human respiratory system, including the nasal cavity, pharynx, larynx, trachea, lungs, and diaphragm.",
+    "filename": "page041_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page041_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "melting of gallium spoon",
+    "useful_for_students": true,
+    "description": "A photograph showing a spoon made of gallium melting in a cup of hot water, demonstrating the low melting point of the metal.",
+    "filename": "page043_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page043_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "smart home thermostat technology",
+    "useful_for_students": true,
+    "description": "A close-up view of a person adjusting a digital smart thermostat displaying an indoor temperature of 68 degrees Fahrenheit and an outdoor temperature of 23 degrees Fahrenheit.",
+    "filename": "page047_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page047_img02.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "concave lens shape",
+    "useful_for_students": true,
+    "description": "A cross-sectional illustration showing the shape of a concave lens, which is thinner in the middle and thicker at the edges.",
+    "filename": "page048_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page048_img01.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "static electricity attraction",
+    "useful_for_students": true,
+    "description": "An illustration showing a negatively charged comb attracting small, neutral paper bits through the process of electrostatic induction.",
+    "filename": "page053_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page053_img02.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "electrostatic force and rotation",
+    "useful_for_students": true,
+    "description": "A diagram showing a positively charged rod suspended by a string, illustrating the effect of electrostatic forces on its orientation.",
+    "filename": "page054_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page054_img02.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "electrostatic attraction between rods",
+    "useful_for_students": true,
+    "description": "A diagram showing a positively charged suspended rod being attracted to a negatively charged rod held below it.",
+    "filename": "page054_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page054_img03.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "static electricity discharge",
+    "useful_for_students": true,
+    "description": "An illustration showing a static electric spark jumping between a human finger and a metal doorknob.",
+    "filename": "page057_img09.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page057_img09.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Human respiratory system anatomy",
+    "useful_for_students": true,
+    "description": "A diagram illustrating the human respiratory system, highlighting key structures like the nasal cavity, pharynx, larynx, trachea, lungs, and diaphragm.",
+    "filename": "page057_img17.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page057_img17.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Electric eel in habitat",
+    "useful_for_students": true,
+    "description": "An electric eel swimming among aquatic plants in an underwater environment.",
+    "filename": "page060_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page060_img01.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Electroplating process setup",
+    "useful_for_students": true,
+    "description": "A diagram illustrating an electrolytic cell setup used for electroplating, showing an anode, a cathode (spoon), and an external power source.",
+    "filename": "page062_img105.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page062_img105.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Electrical glass cartridge fuse",
+    "useful_for_students": true,
+    "description": "A close-up view of a glass cartridge fuse showing the internal metal wire filament.",
+    "filename": "page063_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page063_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "vibration and sound production",
+    "useful_for_students": true,
+    "description": "A young boy strikes a hanging metal pot with a wooden stick to demonstrate how vibrations produce sound.",
+    "filename": "page068_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page068_img01.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "sound propagation in vacuum",
+    "useful_for_students": true,
+    "description": "A diagram showing a mobile phone placed inside a bell jar connected to a vacuum pump to demonstrate that sound requires a medium to travel.",
+    "filename": "page068_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page068_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "electronic musical keyboard",
+    "useful_for_students": true,
+    "description": "A digital piano keyboard with an integrated tablet displaying a music learning app and illuminated keys.",
+    "filename": "page072_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page072_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "musical instrument accordion",
+    "useful_for_students": true,
+    "description": "A black Excalibur piano accordion with red bellows shown against a white background.",
+    "filename": "page072_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page072_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "musical string instrument",
+    "useful_for_students": true,
+    "description": "A violin and its bow shown against a white background.",
+    "filename": "page072_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page072_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Acoustic guitar musical instrument",
+    "useful_for_students": true,
+    "description": "An acoustic guitar with a sunburst finish, commonly used in science textbooks to illustrate the production and propagation of sound waves.",
+    "filename": "page072_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page072_img04.png"
+  },
+  {
+    "type": "photo",
+    "topic": "musical wind instrument",
+    "useful_for_students": true,
+    "description": "A gold-colored saxophone shown from a side angle, commonly used in music education to demonstrate woodwind instruments.",
+    "filename": "page072_img06.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page072_img06.png"
+  },
+  {
+    "type": "photo",
+    "topic": "musical percussion instrument",
+    "useful_for_students": true,
+    "description": "A black snare drum with two wooden drumsticks resting on its white drumhead.",
+    "filename": "page072_img07.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page072_img07.png"
+  },
+  {
+    "type": "photo",
+    "topic": "musical percussion instrument",
+    "useful_for_students": true,
+    "description": "A black bass drum with an Evans drumhead and a foot pedal attached.",
+    "filename": "page072_img08.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page072_img08.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Human larynx and voice",
+    "useful_for_students": true,
+    "description": "An anatomical diagram showing the structure of the human larynx and vocal cords alongside a side-view illustration of the throat.",
+    "filename": "page073_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page073_img01.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Causes of noise pollution",
+    "useful_for_students": true,
+    "description": "An illustration depicting a man covering his ears due to various sources of noise pollution in an urban environment, such as traffic, construction, airplanes, trains, and loudspeakers.",
+    "filename": "page074_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page074_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Coal fossil fuel",
+    "useful_for_students": true,
+    "description": "A high-resolution image of a piece of black coal, a combustible sedimentary rock used as a fossil fuel.",
+    "filename": "page078_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page078_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "magnetic field lines",
+    "useful_for_students": true,
+    "description": "A horseshoe magnet placed on a surface with iron filings demonstrating the pattern of magnetic field lines.",
+    "filename": "page079_img12.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page079_img12.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Properties of magnets",
+    "useful_for_students": true,
+    "description": "The image illustrates the magnetic poles formed when a magnet is broken into pieces and the arrangement of magnetic poles in a rectangular configuration.",
+    "filename": "page080_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page080_img01.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Properties of magnets",
+    "useful_for_students": true,
+    "description": "The image illustrates the magnetic poles formed when a magnet is broken into pieces and the arrangement of magnetic poles in a rectangular configuration.",
+    "filename": "page080_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page080_img02.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "magnetic compass properties",
+    "useful_for_students": true,
+    "description": "A bar magnet suspended by a thread from a stand to demonstrate its directional properties.",
+    "filename": "page080_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page080_img03.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "magnetic attraction and repulsion",
+    "useful_for_students": true,
+    "description": "A diagram showing a suspended bar magnet interacting with another bar magnet to demonstrate magnetic forces.",
+    "filename": "page080_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page080_img04.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Magnetic field lines mapping",
+    "useful_for_students": true,
+    "description": "This image illustrates the method of mapping magnetic field lines around a bar magnet using a compass needle.",
+    "filename": "page081_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page081_img01.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Magnetic field of magnet",
+    "useful_for_students": true,
+    "description": "A diagram showing the magnetic field lines around a bar magnet with compass needles indicating the direction of the magnetic field.",
+    "filename": "page081_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page081_img02.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "magnetization by single touch",
+    "useful_for_students": true,
+    "description": "An illustration showing the single-touch method of magnetizing a steel nail using a bar magnet.",
+    "filename": "page083_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page083_img01.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Earth's magnetic and geographic axes",
+    "useful_for_students": true,
+    "description": "A diagram illustrating the Earth's tilted magnetic axis relative to its geographic axis of rotation.",
+    "filename": "page084_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page084_img02.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Layers of the Earth",
+    "useful_for_students": true,
+    "description": "A cross-section diagram of the Earth showing its internal layers including the crust, mantle, outer core, and inner core.",
+    "filename": "page085_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page085_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Maglev train technology",
+    "useful_for_students": true,
+    "description": "A photograph of a magnetic levitation (maglev) train traveling on an elevated track.",
+    "filename": "page085_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page085_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Medical imaging technology",
+    "useful_for_students": true,
+    "description": "A Philips CT scanner machine located in a clinical examination room.",
+    "filename": "page086_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page086_img02.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "V-2 rocket structure",
+    "useful_for_students": true,
+    "description": "A cross-sectional diagram showing the internal components and fuel systems of a V-2 ballistic missile.",
+    "filename": "page090_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page090_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "liquid nitrogen pouring demonstration",
+    "useful_for_students": true,
+    "description": "A stainless steel thermos is shown pouring liquid nitrogen, characterized by its extreme cold and visible vapor, into a container wrapped in a white towel.",
+    "filename": "page091_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page091_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Chemical reaction producing gas",
+    "useful_for_students": true,
+    "description": "A laboratory beaker emitting a large cloud of reddish-brown gas, illustrating a chemical reaction.",
+    "filename": "page091_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page091_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "porous yellow cleaning sponge",
+    "useful_for_students": true,
+    "description": "A rectangular yellow sponge with a porous texture used for cleaning.",
+    "filename": "page091_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page091_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Crystalline structure of calcite",
+    "useful_for_students": true,
+    "description": "A photograph showing the characteristic rhombohedral cleavage and crystalline structure of a calcite mineral specimen.",
+    "filename": "page091_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page091_img04.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Human respiratory system anatomy",
+    "useful_for_students": true,
+    "description": "A detailed anatomical diagram showing the human respiratory system, including the nasal cavity, pharynx, larynx, trachea, lungs, and diaphragm.",
+    "filename": "page091_img05.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page091_img05.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Liquid propellant rocket engine",
+    "useful_for_students": true,
+    "description": "A schematic diagram illustrating the components and operation of a liquid propellant rocket engine, showing fuel and oxidizer tanks, the combustion chamber, and the nozzle.",
+    "filename": "page091_img06.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page091_img06.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Rakesh Sharma Indian astronaut",
+    "useful_for_students": true,
+    "description": "A portrait of Rakesh Sharma, the first Indian citizen to travel into space, wearing his flight suit.",
+    "filename": "page092_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page092_img01.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Artificial Satellite in Space",
+    "useful_for_students": true,
+    "description": "An illustration depicting an artificial satellite with solar panels orbiting in space with the Moon in the background.",
+    "filename": "page092_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page092_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Kalamsat satellite technology",
+    "useful_for_students": true,
+    "description": "A photograph showing the Kalamsat-beta1, a miniature satellite, next to a coin for scale.",
+    "filename": "page093_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page093_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Portrait of Dr. Mylswamy Annadurai",
+    "useful_for_students": true,
+    "description": "A portrait of Dr. Mylswamy Annadurai, an Indian scientist known for his contributions to the Indian space program.",
+    "filename": "page093_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page093_img02.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Mars Orbiter Mission spacecraft",
+    "useful_for_students": true,
+    "description": "An illustration of the Mangalyaan (Mars Orbiter Mission) spacecraft orbiting Mars.",
+    "filename": "page093_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page093_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Martian surface and craters",
+    "useful_for_students": true,
+    "description": "An aerial view of the Martian surface showing prominent impact craters and geological terrain.",
+    "filename": "page094_img26.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page094_img26.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Kailasavadivoo Sivan portrait",
+    "useful_for_students": true,
+    "description": "A portrait of Dr. K. Sivan, the former Chairman of the Indian Space Research Organisation (ISRO).",
+    "filename": "page095_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page095_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Scientist Ritu Karidhal Srivastava",
+    "useful_for_students": true,
+    "description": "A portrait of Indian scientist Ritu Karidhal Srivastava, known for her contributions to ISRO space missions.",
+    "filename": "page095_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page095_img02.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Chandrayaan-3 lunar mission",
+    "useful_for_students": true,
+    "description": "An illustration showing the Chandrayaan-3 lander on the lunar surface with the rover deploying via a ramp.",
+    "filename": "page095_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page095_img04.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Chandrayaan-3 lunar mission",
+    "useful_for_students": true,
+    "description": "An artistic representation of the Chandrayaan-3 lander and rover on the lunar surface with Earth visible in the background.",
+    "filename": "page096_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page096_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Scientist giving a lecture",
+    "useful_for_students": true,
+    "description": "A man in a white lab coat speaking into a microphone at a podium.",
+    "filename": "page096_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page096_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Apollo 11 mission crew",
+    "useful_for_students": true,
+    "description": "A portrait of the Apollo 11 astronauts Neil Armstrong, Michael Collins, and Buzz Aldrin in their space suits.",
+    "filename": "page097_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page097_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Kalpana Chawla astronaut portrait",
+    "useful_for_students": true,
+    "description": "A portrait of astronaut Kalpana Chawla wearing her orange space suit.",
+    "filename": "page097_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page097_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Sunita Williams astronaut portrait",
+    "useful_for_students": true,
+    "description": "A portrait of astronaut Sunita Williams wearing her NASA space suit with an American flag in the background.",
+    "filename": "page097_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page097_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "crystalline silicon sample",
+    "useful_for_students": true,
+    "description": "A photograph of a piece of crystalline silicon showing its characteristic metallic luster and conchoidal fracture.",
+    "filename": "page103_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page103_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Structure of a diamond",
+    "useful_for_students": true,
+    "description": "A high-resolution image of a faceted diamond illustrating its crystalline structure and light refraction properties.",
+    "filename": "page104_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page104_img01.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Three states of matter",
+    "useful_for_students": true,
+    "description": "An illustration showing an ice cube, a water droplet, and a cloud, representing the solid, liquid, and gaseous states of water.",
+    "filename": "page110_img11.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page110_img11.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Combustion and ignition process",
+    "useful_for_students": true,
+    "description": "A person striking a match against a matchbox to ignite it, demonstrating the process of combustion.",
+    "filename": "page112_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page112_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Michael Faraday portrait",
+    "useful_for_students": true,
+    "description": "A portrait of the British scientist Michael Faraday, known for his contributions to electromagnetism and electrochemistry.",
+    "filename": "page113_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page113_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "types of yeast",
+    "useful_for_students": true,
+    "description": "A photograph displaying different forms of yeast, including fresh yeast blocks, active dry yeast, and a liquid yeast mixture.",
+    "filename": "page114_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page114_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "agricultural practices sowing seeds",
+    "useful_for_students": true,
+    "description": "A farmer is shown scattering seeds by hand over a rice paddy field.",
+    "filename": "page114_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page114_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "impact of water pollution",
+    "useful_for_students": true,
+    "description": "A dead fish washed up on a rocky shore, illustrating the environmental consequences of water pollution.",
+    "filename": "page115_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page115_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "enzymatic browning of apple",
+    "useful_for_students": true,
+    "description": "A cross-section of an apple showing a clear contrast between fresh, white flesh and oxidized, browned flesh.",
+    "filename": "page115_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page115_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Air pollution and emissions",
+    "useful_for_students": true,
+    "description": "A photograph showing industrial smokestacks emitting thick, dark smoke into the atmosphere against a sunset sky.",
+    "filename": "page116_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page116_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "industrial waste metal barrels",
+    "useful_for_students": true,
+    "description": "A stack of weathered, rusted metal barrels showing signs of corrosion and oxidation.",
+    "filename": "page116_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page116_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "combustion and flame process",
+    "useful_for_students": true,
+    "description": "A close-up photograph showing a small flame burning in a metal holder with visible smoke rising against a purple background.",
+    "filename": "page124_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page124_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Space Launch Vehicle",
+    "useful_for_students": true,
+    "description": "A powerful rocket launching into the sky, surrounded by thick clouds and exhaust flames.",
+    "filename": "page125_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page125_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "industrial welding process",
+    "useful_for_students": true,
+    "description": "A welder wearing protective gear performs metal welding, creating bright sparks and smoke in a workshop setting.",
+    "filename": "page125_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page125_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "scuba diver underwater swimming",
+    "useful_for_students": true,
+    "description": "A silhouette of a scuba diver swimming underwater with full diving gear.",
+    "filename": "page125_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page125_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "checking car tire pressure",
+    "useful_for_students": true,
+    "description": "A close-up view of a person using a pressure gauge to check the air pressure in a car tire.",
+    "filename": "page126_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page126_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Incandescent light bulb structure",
+    "useful_for_students": true,
+    "description": "A clear incandescent light bulb against a blue background, illustrating its internal filament and glass structure.",
+    "filename": "page126_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page126_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Sublimation of dry ice",
+    "useful_for_students": true,
+    "description": "A hand pours liquid or solid material from a cylindrical container into a vessel, creating a dense cloud of vapor characteristic of dry ice sublimation.",
+    "filename": "page126_img05.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page126_img05.png"
+  },
+  {
+    "type": "photo",
+    "topic": "application of chemical fertilizers",
+    "useful_for_students": true,
+    "description": "A close-up shot of a hand applying blue granular chemical fertilizer to the soil around a young green seedling.",
+    "filename": "page126_img06.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page126_img06.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Root nodules in legumes",
+    "useful_for_students": true,
+    "description": "A close-up photograph showing nitrogen-fixing root nodules on the root system of a leguminous plant.",
+    "filename": "page126_img07.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page126_img07.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Dry ice sublimation experiment",
+    "useful_for_students": true,
+    "description": "A beaker containing dry ice in water, demonstrating the process of sublimation where solid carbon dioxide turns directly into a gas.",
+    "filename": "page128_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page128_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "John Dalton scientist portrait",
+    "useful_for_students": true,
+    "description": "A portrait of the English chemist and physicist John Dalton, known for his pioneering work in atomic theory.",
+    "filename": "page134_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page134_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "cross section of watermelon",
+    "useful_for_students": true,
+    "description": "A cross-sectional view of a ripe watermelon showing its red flesh and black seeds.",
+    "filename": "page137_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page137_img02.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Thomson's atomic model",
+    "useful_for_students": true,
+    "description": "An illustration of the Plum Pudding model of the atom, showing negatively charged electrons embedded in a positively charged sphere.",
+    "filename": "page137_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page137_img03.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Electrolysis of water experiment",
+    "useful_for_students": true,
+    "description": "A diagram illustrating the electrolysis of water using a battery and two test tubes to collect hydrogen and oxygen gases.",
+    "filename": "page150_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page150_img03.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "human digestive system",
+    "useful_for_students": true,
+    "description": "A labeled diagram illustrating the various organs of the human digestive system.",
+    "filename": "page150_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page150_img04.png"
+  },
+  {
+    "type": "photo",
+    "topic": "friction in daily life",
+    "useful_for_students": true,
+    "description": "A girl ice skating on a frozen lake, demonstrating the concept of low friction.",
+    "filename": "page151_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page151_img01.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Human digestive system anatomy",
+    "useful_for_students": true,
+    "description": "A labeled anatomical diagram illustrating the various organs of the human digestive system.",
+    "filename": "page151_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page151_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Iceberg structure and buoyancy",
+    "useful_for_students": true,
+    "description": "A split-view photograph showing an iceberg above and below the water line to illustrate the concept of buoyancy and density.",
+    "filename": "page152_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page152_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "fresh fish on ice",
+    "useful_for_students": true,
+    "description": "A collection of fresh fish arranged on a bed of crushed ice, commonly used to illustrate food preservation or marine biology concepts.",
+    "filename": "page152_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page152_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "car engine maintenance",
+    "useful_for_students": true,
+    "description": "A mechanic pouring water into the radiator of a car with the hood open.",
+    "filename": "page153_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page153_img01.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Human respiratory system anatomy",
+    "useful_for_students": true,
+    "description": "A diagram illustrating the human respiratory system, including the nasal cavity, pharynx, larynx, trachea, lungs, and diaphragm.",
+    "filename": "page154_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page154_img01.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Human digestive system anatomy",
+    "useful_for_students": true,
+    "description": "A labeled anatomical diagram illustrating the various organs of the human digestive system.",
+    "filename": "page154_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page154_img02.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Human respiratory system anatomy",
+    "useful_for_students": true,
+    "description": "A detailed anatomical diagram illustrating the human respiratory system, including the nasal cavity, pharynx, larynx, trachea, bronchi, and lungs.",
+    "filename": "page155_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page155_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Dead Sea landscape",
+    "useful_for_students": true,
+    "description": "A scenic view of the Dead Sea showing its characteristic turquoise water and salt-encrusted shoreline.",
+    "filename": "page155_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page155_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Freshwater aquarium fish",
+    "useful_for_students": true,
+    "description": "A close-up photograph of a fish swimming in an aquarium with artificial plants and air bubbles.",
+    "filename": "page155_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page155_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Photosynthesis in aquatic plants",
+    "useful_for_students": true,
+    "description": "A close-up view of aquatic plants in an aquarium showing oxygen bubbles forming on their leaves as a result of photosynthesis.",
+    "filename": "page155_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page155_img04.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Locomotion in snails",
+    "useful_for_students": true,
+    "description": "A close-up photograph of a snail moving across a textured surface, illustrating the anatomy and movement of gastropods.",
+    "filename": "page155_img05.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page155_img05.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Human Circulatory System",
+    "useful_for_students": true,
+    "description": "A diagram illustrating the human circulatory system, showing the heart, major blood vessels, and the flow of blood to and from the lungs and body.",
+    "filename": "page157_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page157_img01.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Human Circulatory System",
+    "useful_for_students": true,
+    "description": "A diagram illustrating the human circulatory system, showing the heart, major blood vessels, and the flow of blood to various organs.",
+    "filename": "page157_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page157_img02.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Water purification process",
+    "useful_for_students": true,
+    "description": "A schematic diagram showing the stages of water treatment including sedimentation, filtration, and chlorination.",
+    "filename": "page157_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page157_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Limescale on heating element",
+    "useful_for_students": true,
+    "description": "A photograph of a heavily calcified electric heating element showing significant limescale buildup.",
+    "filename": "page158_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page158_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "water pollution and waste",
+    "useful_for_students": true,
+    "description": "A photograph showing a polluted water body heavily contaminated with plastic waste and debris along its bank.",
+    "filename": "page158_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page158_img02.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Daily water usage consumption",
+    "useful_for_students": true,
+    "description": "A bar chart illustrating the volume of water in cubic decimeters used for various daily household activities.",
+    "filename": "page159_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page159_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "personal care product ingredients",
+    "useful_for_students": true,
+    "description": "An educational image showing personal care products like face wash, body wash, and toothpaste, with a zoomed-in view of the chemical ingredients list.",
+    "filename": "page159_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page159_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "microplastics in water",
+    "useful_for_students": true,
+    "description": "A hand holding a spoon containing water with visible blue microplastic particles, highlighting the issue of plastic contamination.",
+    "filename": "page159_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page159_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "separation of mixtures",
+    "useful_for_students": true,
+    "description": "A close-up view of a black fabric covered in a mixture of fine particles, illustrating the concept of separating solid mixtures.",
+    "filename": "page159_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page159_img04.png"
+  },
+  {
+    "type": "photo",
+    "topic": "environmental pollution and waste",
+    "useful_for_students": true,
+    "description": "A photograph showing a drainage area heavily polluted with plastic waste and debris, illustrating the impact of improper waste disposal on urban sanitation.",
+    "filename": "page160_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page160_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "agricultural pest control methods",
+    "useful_for_students": true,
+    "description": "Two farmers are using motorized backpack sprayers to apply pesticides or fertilizers to a green rice field.",
+    "filename": "page160_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page160_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "oil spill environmental pollution",
+    "useful_for_students": true,
+    "description": "Workers in protective gear cleaning up an oil spill on a rocky coastline.",
+    "filename": "page160_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page160_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Water pollution and contamination",
+    "useful_for_students": true,
+    "description": "Two pipes discharging thick, grey industrial wastewater into a body of water, illustrating environmental pollution.",
+    "filename": "page160_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page160_img04.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Microplastics in bottled water",
+    "useful_for_students": true,
+    "description": "An educational image showing a plastic water bottle with a magnified circular inset highlighting the presence of microplastics.",
+    "filename": "page161_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page161_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "water droplet surface tension",
+    "useful_for_students": true,
+    "description": "A high-speed photograph showing a water droplet impacting a liquid surface, creating concentric ripples and a central column.",
+    "filename": "page164_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page164_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Crystalline structure of substances",
+    "useful_for_students": true,
+    "description": "A close-up photograph showing a pile of needle-like, translucent crystals against a black background.",
+    "filename": "page166_img07.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page166_img07.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Portrait of Svante Arrhenius",
+    "useful_for_students": true,
+    "description": "A black and white portrait of the Swedish scientist Svante Arrhenius.",
+    "filename": "page166_img08.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page166_img08.png"
+  },
+  {
+    "type": "photo",
+    "topic": "bunch of dark grapes",
+    "useful_for_students": true,
+    "description": "A high-angle studio shot of a fresh bunch of dark purple grapes against a white background.",
+    "filename": "page166_img09.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page166_img09.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Common Household Chemical Products",
+    "useful_for_students": true,
+    "description": "A mind map illustration showing various categories of household chemical products such as cleaning agents, food items, beverages, and paints.",
+    "filename": "page167_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page167_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Indian mango pickle preparation",
+    "useful_for_students": true,
+    "description": "A close-up view of a glass jar filled with spicy Indian mango pickle, with a spoonful being lifted from the top.",
+    "filename": "page168_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page168_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "honey bee sting mechanism",
+    "useful_for_students": true,
+    "description": "A close-up photograph showing a honey bee with its barbed stinger embedded in human skin, illustrating the process of stinging.",
+    "filename": "page170_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page170_img01.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Wasp sting mechanism",
+    "useful_for_students": true,
+    "description": "An anatomical illustration showing a wasp stinging human skin with a magnified view of the stinger penetrating the tissue.",
+    "filename": "page170_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page170_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "laundry soap bars",
+    "useful_for_students": true,
+    "description": "Two stacked blue bars of laundry soap commonly used for cleaning clothes.",
+    "filename": "page170_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page170_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "application of chemical fertilizers",
+    "useful_for_students": true,
+    "description": "A farmer applying urea fertilizer to a field, with a bag of Tata Urea visible in the foreground.",
+    "filename": "page170_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page170_img04.png"
+  },
+  {
+    "type": "photo",
+    "topic": "synthetic fibers and plastics",
+    "useful_for_students": true,
+    "description": "A collection of colorful synthetic fiber cords bundled together.",
+    "filename": "page170_img06.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page170_img06.png"
+  },
+  {
+    "type": "photo",
+    "topic": "industrial water pollution",
+    "useful_for_students": true,
+    "description": "Two large pipes discharging thick, muddy wastewater onto a riverbank, illustrating the environmental impact of industrial waste disposal.",
+    "filename": "page171_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page171_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "agricultural crop field",
+    "useful_for_students": true,
+    "description": "A wide-angle view of a field with young, sparsely planted crops growing in rows across a hilly landscape.",
+    "filename": "page171_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page171_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "acid base indicator experiment",
+    "useful_for_students": true,
+    "description": "A science experiment demonstrating the color change of turmeric indicator when mixed with different substances in glasses and bowls.",
+    "filename": "page172_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page172_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Hibiscus flower anatomy",
+    "useful_for_students": true,
+    "description": "A vibrant red hibiscus flower showing its distinct petals and prominent central reproductive structures.",
+    "filename": "page172_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page172_img02.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "formation of petroleum",
+    "useful_for_students": true,
+    "description": "A four-stage diagram illustrating the geological process of how organic marine matter transforms into oil and gas deposits over time, culminating in extraction via an offshore drilling rig.",
+    "filename": "page177_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page177_img01.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Methane molecular structure",
+    "useful_for_students": true,
+    "description": "A ball-and-stick model showing the chemical structure of a methane molecule with one central carbon atom bonded to four hydrogen atoms.",
+    "filename": "page177_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page177_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "LPG gas cylinders",
+    "useful_for_students": true,
+    "description": "A large stack of orange LPG gas cylinders arranged in rows and columns.",
+    "filename": "page178_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page178_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Liquefied Petroleum Gas cylinder",
+    "useful_for_students": true,
+    "description": "A blue 3-STAR brand LPG cylinder used for domestic fuel storage.",
+    "filename": "page179_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page179_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Compressed Natural Gas (CNG)",
+    "useful_for_students": true,
+    "description": "A white car with two yellow compressed natural gas (CNG) cylinders installed in its trunk.",
+    "filename": "page179_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page179_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Air pollution and emissions",
+    "useful_for_students": true,
+    "description": "A cityscape showing industrial chimneys emitting large plumes of smoke into the atmosphere, illustrating the concept of air pollution.",
+    "filename": "page179_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page179_img03.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "destructive distillation of coal",
+    "useful_for_students": true,
+    "description": "A schematic diagram illustrating the industrial process of the destructive distillation of coal to produce coal gas, coal tar, and coke.",
+    "filename": "page180_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page180_img01.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Biogas energy production process",
+    "useful_for_students": true,
+    "description": "A diagram illustrating the process of converting animal waste into biogas to generate electricity.",
+    "filename": "page181_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page181_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Coal mining and extraction",
+    "useful_for_students": true,
+    "description": "A close-up view of a person holding a piece of coal with an open-pit coal mine and heavy machinery in the background.",
+    "filename": "page181_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page181_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "underground cave exploration",
+    "useful_for_students": true,
+    "description": "A person stands inside a large, rocky underground cave illuminated by a light source.",
+    "filename": "page181_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page181_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Coal and fossil fuels",
+    "useful_for_students": true,
+    "description": "A close-up view of a pile of raw coal chunks showing their dark, irregular, and textured appearance.",
+    "filename": "page182_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page182_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Coal mining and resources",
+    "useful_for_students": true,
+    "description": "A close-up view of a pile of raw coal chunks showing the texture and composition of the fossil fuel.",
+    "filename": "page182_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page182_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Coal and fossil fuels",
+    "useful_for_students": true,
+    "description": "A close-up view of a pile of black coal chunks showing their irregular shapes and textures.",
+    "filename": "page182_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page182_img04.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Carbon fiber fabric material",
+    "useful_for_students": true,
+    "description": "A close-up view of a woven carbon fiber fabric sheet showing its characteristic twill weave pattern.",
+    "filename": "page183_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page183_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Lubrication of machine parts",
+    "useful_for_students": true,
+    "description": "This image illustrates the process of lubricating mechanical components like gears and ball bearings with oil to reduce friction and wear.",
+    "filename": "page183_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page183_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Activated charcoal powder",
+    "useful_for_students": true,
+    "description": "A pile of fine black activated charcoal powder used in scientific experiments and industrial applications.",
+    "filename": "page183_img07.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page183_img07.png"
+  },
+  {
+    "type": "photo",
+    "topic": "offshore oil drilling platform",
+    "useful_for_students": true,
+    "description": "An offshore oil and gas production platform situated in the middle of the ocean.",
+    "filename": "page184_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page184_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "oil spill environmental pollution",
+    "useful_for_students": true,
+    "description": "An image showing two black barrels with one tipped over, illustrating an oil spill.",
+    "filename": "page185_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page185_img01.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Sources and uses of petroleum",
+    "useful_for_students": true,
+    "description": "A vertical sequence of illustrations depicting various applications and hazards related to petroleum products, including gas cylinders, vehicles, toxic warning signs, and transportation methods.",
+    "filename": "page186_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page186_img02.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "fractional distillation column process",
+    "useful_for_students": true,
+    "description": "A schematic diagram showing a fractional distillation column used to separate components of a mixture based on their boiling points.",
+    "filename": "page186_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page186_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Wind energy power plant",
+    "useful_for_students": true,
+    "description": "A wide-angle view of a large wind farm featuring multiple wind turbines installed in a field under a clear blue sky.",
+    "filename": "page188_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page188_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Solar energy power plant",
+    "useful_for_students": true,
+    "description": "A wide-angle view of a large-scale solar farm featuring rows of photovoltaic panels installed in a grassy field under a blue sky with clouds.",
+    "filename": "page189_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page189_img01.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Bacteriophage virus structure",
+    "useful_for_students": true,
+    "description": "An illustration of a bacteriophage virus injecting its genetic material into a host cell.",
+    "filename": "page193_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page193_img02.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Structure of Influenza Virus",
+    "useful_for_students": true,
+    "description": "A diagram showing the structural components of an influenza virus, including its surface proteins and internal genetic material.",
+    "filename": "page193_img113.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page193_img113.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Tobacco Mosaic Virus structure",
+    "useful_for_students": true,
+    "description": "A diagram showing the helical structure of the Tobacco Mosaic Virus with its protein capsid and internal RNA strand.",
+    "filename": "page193_img224.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page193_img224.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "diversity of green algae",
+    "useful_for_students": true,
+    "description": "This image displays various forms of green algae, including unicellular, colonial, and multicellular structures.",
+    "filename": "page195_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page195_img01.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Protein secondary structure model",
+    "useful_for_students": true,
+    "description": "A 3D ribbon diagram illustrating the alpha-helix and random coil secondary structures of a protein molecule.",
+    "filename": "page196_img46.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page196_img46.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Penicillium mold fungi",
+    "useful_for_students": true,
+    "description": "A scanning electron micrograph showing the brush-like conidiophores and spores of the Penicillium fungus.",
+    "filename": "page197_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page197_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Microorganisms and biological cultures",
+    "useful_for_students": true,
+    "description": "A collection of images showing various microbial cultures on petri dishes and microscopic views of algae and cyanobacteria.",
+    "filename": "page197_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page197_img02.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "plant growth and development",
+    "useful_for_students": true,
+    "description": "A digital illustration showing the upper portion of a green plant stem with leaves against a light blue background.",
+    "filename": "page198_img23.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page198_img23.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "plant growth and development",
+    "useful_for_students": true,
+    "description": "A digital illustration of a young green plant seedling with a single leaf against a light blue background.",
+    "filename": "page198_img26.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page198_img26.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Genetically modified Bt corn",
+    "useful_for_students": true,
+    "description": "An illustration showing the process of genetic modification where a gene is inserted into corn DNA to create a plant that is toxic to pests like the corn borer.",
+    "filename": "page198_img51.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page198_img51.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Citrus Canker Disease",
+    "useful_for_students": true,
+    "description": "This image shows citrus fruits affected by citrus canker, characterized by raised, brown, corky lesions surrounded by yellow halos.",
+    "filename": "page200_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page200_img01.png"
+  },
+  {
+    "type": "text",
+    "topic": "Microbiology learning outcomes",
+    "useful_for_students": true,
+    "description": "This slide outlines the educational objectives for a lesson on the classification and characteristics of various microorganisms.",
+    "filename": "page204_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page204_img03.png"
+  },
+  {
+    "type": "text",
+    "topic": "Introduction to microorganisms",
+    "useful_for_students": true,
+    "description": "This slide provides a basic definition of microorganisms, their alternative name (microbes), and their ubiquitous presence in the environment.",
+    "filename": "page204_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page204_img04.png"
+  },
+  {
+    "type": "text",
+    "topic": "Classification of microorganisms",
+    "useful_for_students": true,
+    "description": "This slide outlines the five key characteristics used to classify microorganisms: form, size, habitats, nutrition, and method of reproduction.",
+    "filename": "page204_img05.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page204_img05.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Classification of microorganisms",
+    "useful_for_students": true,
+    "description": "A flowchart illustrating the main types of microorganisms including viruses, protozoa, bacteria, algae, and fungi.",
+    "filename": "page204_img06.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page204_img06.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Classification of microorganisms",
+    "useful_for_students": true,
+    "description": "A title slide for a presentation on the classification of microorganisms featuring a stylized green microbe graphic.",
+    "filename": "page204_img15.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page204_img15.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Spirogyra filamentous green algae",
+    "useful_for_students": true,
+    "description": "A microscopic view of Spirogyra filaments showing their characteristic spiral-shaped chloroplasts.",
+    "filename": "page206_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page206_img02.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Structure of Chlamydomonas cell",
+    "useful_for_students": true,
+    "description": "A diagram illustrating the internal cellular structures of the unicellular green alga Chlamydomonas, including its flagella, chloroplast, and nucleus.",
+    "filename": "page206_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page206_img03.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "cooked noodles food item",
+    "useful_for_students": true,
+    "description": "An illustration of a pile of cooked brown noodles.",
+    "filename": "page206_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page206_img04.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Red Algae structure",
+    "useful_for_students": true,
+    "description": "A detailed illustration showing the branching, fern-like structure of red algae.",
+    "filename": "page206_img05.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page206_img05.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Plant leaf disease symptoms",
+    "useful_for_students": true,
+    "description": "An illustration showing a plant branch with leaves affected by fungal leaf spot disease, characterized by dark necrotic spots surrounded by yellow halos.",
+    "filename": "page207_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page207_img01.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Rhizopus bread mold structure",
+    "useful_for_students": true,
+    "description": "A diagram illustrating the structure of Rhizopus, a common bread mold, showing its sporangia, sporangiophores, and rhizoids.",
+    "filename": "page207_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page207_img02.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Penicillium mold structure",
+    "useful_for_students": true,
+    "description": "A microscopic view of Penicillium fungus showing its characteristic brush-like conidiophores and chains of conidia spores.",
+    "filename": "page207_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page207_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Mushroom in forest habitat",
+    "useful_for_students": true,
+    "description": "A close-up photograph of a white mushroom growing among fallen autumn leaves.",
+    "filename": "page207_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page207_img04.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Yeast cells budding",
+    "useful_for_students": true,
+    "description": "A scanning electron micrograph showing yeast cells undergoing the process of budding.",
+    "filename": "page207_img05.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page207_img05.png"
+  },
+  {
+    "type": "photo",
+    "topic": "White rust on leaves",
+    "useful_for_students": true,
+    "description": "A close-up photograph of a green leaf showing signs of white rust fungal infection, characterized by white, powdery pustules on the leaf surface.",
+    "filename": "page208_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page208_img04.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Ringworm fungal skin infection",
+    "useful_for_students": true,
+    "description": "An illustration showing a circular, red, scaly skin lesion characteristic of a ringworm (tinea corporis) infection.",
+    "filename": "page208_img05.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page208_img05.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Athlete's foot fungal infection",
+    "useful_for_students": true,
+    "description": "An illustration showing the symptoms of athlete's foot, characterized by red, inflamed, and peeling skin between the toes.",
+    "filename": "page208_img06.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page208_img06.png"
+  },
+  {
+    "type": "photo",
+    "topic": "scalp dandruff and hair",
+    "useful_for_students": true,
+    "description": "A microscopic view of a human scalp showing hair follicles and visible white flakes of dandruff.",
+    "filename": "page208_img07.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page208_img07.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Thallophyta plant body",
+    "useful_for_students": true,
+    "description": "A close-up photograph of a thalloid liverwort, a type of non-vascular plant, growing on moist soil.",
+    "filename": "page209_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page209_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Psilotum plant structure",
+    "useful_for_students": true,
+    "description": "A close-up view of the green, leafless stems of a Psilotum plant featuring small, yellow, spherical sporangia.",
+    "filename": "page210_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page210_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Lycopodium club moss plant",
+    "useful_for_students": true,
+    "description": "A close-up view of Lycopodium, a type of club moss, showing its characteristic green foliage and upright, spore-bearing strobili.",
+    "filename": "page210_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page210_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Equisetum horsetail plant",
+    "useful_for_students": true,
+    "description": "A close-up photograph of Equisetum, commonly known as horsetail, showing its characteristic jointed, green, whorled stems.",
+    "filename": "page210_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page210_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Fern plant morphology",
+    "useful_for_students": true,
+    "description": "A close-up view of a lush green fern plant showing its characteristic fronds and pinnate leaf structure.",
+    "filename": "page210_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page210_img04.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Cycad plant reproductive structure",
+    "useful_for_students": true,
+    "description": "A high-angle close-up of a Sago Palm (Cycas revoluta) showing its central male cone surrounded by dark green, pinnate leaves.",
+    "filename": "page211_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page211_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Ginkgo biloba leaves",
+    "useful_for_students": true,
+    "description": "A close-up photograph showing the distinctive fan-shaped leaves of a Ginkgo biloba tree.",
+    "filename": "page211_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page211_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Coniferous pine tree branches",
+    "useful_for_students": true,
+    "description": "A close-up photograph showing the needles and small cones of a pine tree, illustrating the reproductive structures of a gymnosperm.",
+    "filename": "page211_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page211_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Acalypha indica plant identification",
+    "useful_for_students": true,
+    "description": "A top-down view of an Acalypha indica plant, commonly known as Indian copperleaf, showing its characteristic serrated leaves and small flower clusters.",
+    "filename": "page214_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page214_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Bael fruit tree",
+    "useful_for_students": true,
+    "description": "A photograph showing several round, green Bael fruits (Aegle marmelos) hanging from the branches of a leafy tree.",
+    "filename": "page214_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page214_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Solanum trilobatum plant",
+    "useful_for_students": true,
+    "description": "A photograph showing the leaves, purple flowers, and small red berries of the Solanum trilobatum plant.",
+    "filename": "page214_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page214_img04.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Aloe vera plant structure",
+    "useful_for_students": true,
+    "description": "A high-resolution image of an Aloe vera plant showing its characteristic succulent, serrated leaves.",
+    "filename": "page215_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page215_img02.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "types of animal tissues",
+    "useful_for_students": true,
+    "description": "An illustration showing four different types of animal tissues: connective tissue, epithelial tissue, muscle tissue, and nervous tissue.",
+    "filename": "page220_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page220_img01.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "feline internal anatomy",
+    "useful_for_students": true,
+    "description": "An anatomical illustration showing a healthy cat alongside a cat with its internal organs visible.",
+    "filename": "page220_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page220_img02.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Internal anatomy of cat",
+    "useful_for_students": true,
+    "description": "An anatomical illustration showing a cat with its internal organs visible in the lower figure.",
+    "filename": "page220_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page220_img03.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Anatomy of human stomach",
+    "useful_for_students": true,
+    "description": "An anatomical illustration showing the human stomach and its associated blood vessels and attached mesentery.",
+    "filename": "page220_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page220_img04.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Animal cell structure",
+    "useful_for_students": true,
+    "description": "A diagram showing the internal organelles of an animal cell, including the nucleus, endoplasmic reticulum, and Golgi apparatus.",
+    "filename": "page220_img08.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page220_img08.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "animal cell organelles",
+    "useful_for_students": true,
+    "description": "A diagram showing cellular structures including mitochondria, centrioles, and cytoskeletal filaments within an animal cell.",
+    "filename": "page220_img10.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page220_img10.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Cell division and cleavage",
+    "useful_for_students": true,
+    "description": "A diagram illustrating the process of a single cell dividing into a cluster of multiple cells, representing early embryonic development or cleavage.",
+    "filename": "page220_img11.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page220_img11.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Types of human cells",
+    "useful_for_students": true,
+    "description": "An illustration showing various types of human cells, including red blood cells, muscle cells, an ovum, a white blood cell, a sperm cell, and a neuron.",
+    "filename": "page221_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page221_img01.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Four types of animal tissues",
+    "useful_for_students": true,
+    "description": "An educational illustration showing the microscopic structures of connective, epithelial, muscle, and nervous tissues.",
+    "filename": "page221_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page221_img02.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Human excretory system kidneys",
+    "useful_for_students": true,
+    "description": "An anatomical illustration showing the human kidneys and the attached ureters.",
+    "filename": "page221_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page221_img04.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Human brain anatomy",
+    "useful_for_students": true,
+    "description": "A lateral view illustration of the human brain showing the cerebrum, cerebellum, and brainstem.",
+    "filename": "page221_img12.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page221_img12.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Human liver and gallbladder",
+    "useful_for_students": true,
+    "description": "An anatomical illustration showing the human liver with the attached gallbladder and bile ducts.",
+    "filename": "page221_img13.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page221_img13.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Human respiratory system anatomy",
+    "useful_for_students": true,
+    "description": "An anatomical illustration showing the human lungs, trachea, and bronchial tree.",
+    "filename": "page221_img14.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page221_img14.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Human respiratory system anatomy",
+    "useful_for_students": true,
+    "description": "An anatomical illustration showing the human lungs and the trachea.",
+    "filename": "page221_img15.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page221_img15.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Human stomach anatomy",
+    "useful_for_students": true,
+    "description": "A medical illustration showing the anatomical structure of the human stomach.",
+    "filename": "page221_img19.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page221_img19.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Human respiratory system anatomy",
+    "useful_for_students": true,
+    "description": "An anatomical illustration showing the human lungs, trachea, heart, and diaphragm within the thoracic cavity.",
+    "filename": "page224_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page224_img01.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Mechanism of human breathing",
+    "useful_for_students": true,
+    "description": "A diagram illustrating the movement of the diaphragm and lungs during the processes of inhalation and exhalation.",
+    "filename": "page224_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page224_img02.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Human respiratory system model",
+    "useful_for_students": true,
+    "description": "A bell jar model demonstrating the mechanics of human breathing, showing how the movement of the diaphragm affects lung inflation.",
+    "filename": "page225_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page225_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "diffusion in liquids",
+    "useful_for_students": true,
+    "description": "A tea bag steeping in a glass mug, demonstrating the process of diffusion as tea particles spread through the hot water.",
+    "filename": "page226_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page226_img01.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Red blood cell tonicity",
+    "useful_for_students": true,
+    "description": "This diagram illustrates the effect of hypertonic, isotonic, and hypotonic solutions on red blood cells, showing crenation, normal shape, and hemolysis respectively.",
+    "filename": "page227_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page227_img01.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "External anatomy of fish",
+    "useful_for_students": true,
+    "description": "This image illustrates the external body parts of two different types of fish, highlighting features like fins, gills, and mouth structures.",
+    "filename": "page227_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page227_img02.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "External anatomy of fish",
+    "useful_for_students": true,
+    "description": "This image illustrates the external body parts of two different types of fish, highlighting features such as fins, gills, and mouth structures.",
+    "filename": "page227_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page227_img03.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Peristaltic movement in earthworm",
+    "useful_for_students": true,
+    "description": "A sequence of diagrams illustrating the peristaltic locomotion of an earthworm using its segments and setae.",
+    "filename": "page234_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page234_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "anatomy of a cockroach",
+    "useful_for_students": true,
+    "description": "A high-angle, full-body view of an adult cockroach against a plain white background, commonly used in biology textbooks to illustrate insect morphology.",
+    "filename": "page234_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page234_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Sidewinder rattlesnake in desert",
+    "useful_for_students": true,
+    "description": "A sidewinder rattlesnake with its tongue extended, moving across sandy terrain.",
+    "filename": "page235_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page235_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Bald eagle in flight",
+    "useful_for_students": true,
+    "description": "A majestic bald eagle soaring with its wings fully extended against a backdrop of snow-covered mountains.",
+    "filename": "page235_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page235_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Bald eagle in flight",
+    "useful_for_students": true,
+    "description": "A bald eagle is captured in mid-air with its wings spread wide and talons extended, preparing to land or hunt.",
+    "filename": "page235_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page235_img03.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "fish swimming locomotion mechanism",
+    "useful_for_students": true,
+    "description": "This diagram illustrates the sequential body movements and tail strokes involved in the swimming motion of a fish.",
+    "filename": "page236_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page236_img01.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Structure of synovial joint",
+    "useful_for_students": true,
+    "description": "A cross-sectional diagram illustrating the anatomical components of a synovial joint, including bone, cartilage, and the joint capsule.",
+    "filename": "page238_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page238_img01.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Ball and socket joint",
+    "useful_for_students": true,
+    "description": "An anatomical illustration showing the structure and movement of a human hip joint as an example of a ball and socket joint.",
+    "filename": "page238_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page238_img02.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Saddle joint anatomy",
+    "useful_for_students": true,
+    "description": "An anatomical illustration showing the structure and movement of a saddle joint in the human hand.",
+    "filename": "page238_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page238_img03.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Ellipsoid joint anatomy",
+    "useful_for_students": true,
+    "description": "An anatomical illustration showing the structure and movement of an ellipsoid (condyloid) joint in the human wrist.",
+    "filename": "page238_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page238_img04.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Pivot joint anatomy",
+    "useful_for_students": true,
+    "description": "An illustration comparing a mechanical pivot model to the human atlanto-axial joint in the cervical spine.",
+    "filename": "page238_img05.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page238_img05.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "intervertebral disc structure",
+    "useful_for_students": true,
+    "description": "An illustration comparing a simplified mechanical model of a disc to the anatomical structure of human vertebrae and intervertebral discs.",
+    "filename": "page238_img06.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page238_img06.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Hinge joint anatomy",
+    "useful_for_students": true,
+    "description": "An anatomical illustration showing the structure and movement mechanism of a hinge joint, specifically the elbow joint.",
+    "filename": "page238_img07.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page238_img07.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Pectoralis minor muscle anatomy",
+    "useful_for_students": true,
+    "description": "An anatomical illustration showing the location and attachment of the pectoralis minor muscles on the human rib cage.",
+    "filename": "page239_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page239_img01.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Human wrist bone anatomy",
+    "useful_for_students": true,
+    "description": "An anatomical illustration highlighting the carpal bones of the human wrist, color-coded to show different rows of bones.",
+    "filename": "page239_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page239_img02.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Human vertebral column anatomy",
+    "useful_for_students": true,
+    "description": "An anatomical diagram showing the human vertebral column divided into cervical, thoracic, lumbar, and sacral regions.",
+    "filename": "page240_img05.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page240_img05.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Human rib cage anatomy",
+    "useful_for_students": true,
+    "description": "An anatomical illustration of the human thoracic cage showing the ribs, sternum, and costal cartilages.",
+    "filename": "page241_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page241_img01.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Human pelvic girdle anatomy",
+    "useful_for_students": true,
+    "description": "An anatomical diagram illustrating the human pelvic girdle, including the ilium, sacrum, pubic symphysis, and femur.",
+    "filename": "page242_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page242_img01.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Human lower limb skeleton",
+    "useful_for_students": true,
+    "description": "An anatomical diagram showing the bones of the human lower limb, including the pelvis, femur, patella, tibia, fibula, and foot bones.",
+    "filename": "page242_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page242_img02.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Human organ systems anatomy",
+    "useful_for_students": true,
+    "description": "An anatomical illustration showing the human heart and the large and small intestines.",
+    "filename": "page243_img2894.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page243_img2894.png"
+  },
+  {
+    "type": "photo",
+    "topic": "stages of human growth",
+    "useful_for_students": true,
+    "description": "A series of five individuals representing different stages of human growth from childhood to adolescence.",
+    "filename": "page249_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page249_img01.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "Human endocrine system glands",
+    "useful_for_students": true,
+    "description": "An anatomical diagram illustrating the locations of major endocrine glands in the human body.",
+    "filename": "page250_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page250_img01.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Human thyroid gland anatomy",
+    "useful_for_students": true,
+    "description": "An anatomical illustration showing the location and structure of the human thyroid gland in the neck.",
+    "filename": "page251_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page251_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "traditional agricultural farming practices",
+    "useful_for_students": true,
+    "description": "A farmer uses a pair of oxen to pull a traditional wooden plow through a muddy field to prepare the soil for planting.",
+    "filename": "page260_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page260_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Agricultural soil preparation",
+    "useful_for_students": true,
+    "description": "A farmer driving a tractor equipped with a cultivator to till and prepare the soil in a field.",
+    "filename": "page260_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page260_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Agricultural crop field",
+    "useful_for_students": true,
+    "description": "A wide-angle view of a golden rice field ready for harvest under a cloudy sky.",
+    "filename": "page260_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page260_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "cultivation of flowering plants",
+    "useful_for_students": true,
+    "description": "A field of young daffodil plants growing in neat, parallel rows.",
+    "filename": "page260_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page260_img04.png"
+  },
+  {
+    "type": "photo",
+    "topic": "maize crop cultivation",
+    "useful_for_students": true,
+    "description": "A close-up view of mature maize cobs growing on stalks in a field.",
+    "filename": "page260_img05.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page260_img05.png"
+  },
+  {
+    "type": "photo",
+    "topic": "cultivation of flowering plants",
+    "useful_for_students": true,
+    "description": "A greenhouse filled with rows of vibrant red geranium plants in pots, demonstrating large-scale plant propagation.",
+    "filename": "page260_img06.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page260_img06.png"
+  },
+  {
+    "type": "photo",
+    "topic": "traditional agricultural farming practices",
+    "useful_for_students": true,
+    "description": "A farmer in a field using a pair of oxen to pull a traditional wooden plow for soil cultivation.",
+    "filename": "page261_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page261_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "antique horse-drawn cultivator",
+    "useful_for_students": true,
+    "description": "An antique horse-drawn agricultural cultivator with metal wheels and curved tines resting on a lawn.",
+    "filename": "page261_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page261_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "agricultural hand tool",
+    "useful_for_students": true,
+    "description": "A photograph of a traditional hand hoe with a wooden handle and a metal blade used for gardening and farming.",
+    "filename": "page261_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page261_img04.png"
+  },
+  {
+    "type": "photo",
+    "topic": "rice paddy field cultivation",
+    "useful_for_students": true,
+    "description": "A group of farmers working together to transplant rice seedlings in a flooded paddy field.",
+    "filename": "page262_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page262_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "compost and organic fertilizer",
+    "useful_for_students": true,
+    "description": "A metal tub filled with dark, nutrient-rich compost soil used for gardening and agriculture.",
+    "filename": "page262_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page262_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Chemical fertilizers for agriculture",
+    "useful_for_students": true,
+    "description": "A brown paper bag filled with blue granular chemical fertilizer resting on a patch of green grass.",
+    "filename": "page262_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page262_img04.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Traditional irrigation methods",
+    "useful_for_students": true,
+    "description": "A farmer uses a pair of oxen to operate a traditional pulley-based water lifting system for irrigation in a field.",
+    "filename": "page263_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page263_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Traditional irrigation methods",
+    "useful_for_students": true,
+    "description": "A farmer using a traditional manual irrigation tool, known as a swing basket or 'donga', to lift water into a paddy field.",
+    "filename": "page263_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page263_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "furrow irrigation in agriculture",
+    "useful_for_students": true,
+    "description": "A field of crops being irrigated using the furrow irrigation method, where water flows through channels between rows of plants.",
+    "filename": "page263_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page263_img04.png"
+  },
+  {
+    "type": "photo",
+    "topic": "drip irrigation system",
+    "useful_for_students": true,
+    "description": "A greenhouse interior showing rows of young plants being watered by a drip irrigation system.",
+    "filename": "page264_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page264_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "agricultural farming practices",
+    "useful_for_students": true,
+    "description": "Two farmers are shown bending over while working in a lush green rice paddy field.",
+    "filename": "page264_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page264_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "manual rice weeding tool",
+    "useful_for_students": true,
+    "description": "A woman uses a manual rotary weeder to remove weeds between rows of rice plants in a paddy field.",
+    "filename": "page264_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page264_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "agricultural pest control methods",
+    "useful_for_students": true,
+    "description": "Two farmers are using motorized backpack sprayers to apply pesticides or fertilizers to a green rice field.",
+    "filename": "page264_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page264_img04.png"
+  },
+  {
+    "type": "photo",
+    "topic": "agricultural harvesting machinery",
+    "useful_for_students": true,
+    "description": "A Case IH combine harvester equipped with a sunflower header harvesting a field of dried sunflowers.",
+    "filename": "page265_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page265_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "traditional rice threshing process",
+    "useful_for_students": true,
+    "description": "A farmer in Tamil Nadu manually threshing harvested rice stalks by striking them against a wooden log.",
+    "filename": "page265_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page265_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Winnowing of harvested grain",
+    "useful_for_students": true,
+    "description": "Two farmers are performing the agricultural process of winnowing to separate grain from chaff using the wind.",
+    "filename": "page265_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page265_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "traditional rice harvesting methods",
+    "useful_for_students": true,
+    "description": "Farmers are manually harvesting a rice crop in a field.",
+    "filename": "page265_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page265_img04.png"
+  },
+  {
+    "type": "photo",
+    "topic": "crop field cultivation",
+    "useful_for_students": true,
+    "description": "A field of young maize plants growing in rows in a soil-based agricultural setting.",
+    "filename": "page266_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page266_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "traditional grain storage structures",
+    "useful_for_students": true,
+    "description": "A row of traditional cylindrical mud granaries with thatched roofs, elevated on stone bases for agricultural storage.",
+    "filename": "page266_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page266_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "storage of food grains",
+    "useful_for_students": true,
+    "description": "A large stack of burlap sacks filled with food grains stored in a warehouse.",
+    "filename": "page266_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page266_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Intercropping agricultural practice",
+    "useful_for_students": true,
+    "description": "An agricultural field showing intercropping where rows of maize are planted alongside rows of legumes.",
+    "filename": "page266_img05.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page266_img05.png"
+  },
+  {
+    "type": "photo",
+    "topic": "grain storage in silos",
+    "useful_for_students": true,
+    "description": "A storage room featuring rows of metal containers used for preserving grains and food items.",
+    "filename": "page267_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page267_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "seed ball preparation",
+    "useful_for_students": true,
+    "description": "A hand holding a seed ball made of soil, compost, and seeds, used for reforestation and guerrilla gardening.",
+    "filename": "page267_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page267_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "seed germination in soil",
+    "useful_for_students": true,
+    "description": "A close-up view of a soil ball with several small green seedlings sprouting from its surface.",
+    "filename": "page267_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page267_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Lichen on tree bark",
+    "useful_for_students": true,
+    "description": "A close-up photograph showing various species of foliose and fruticose lichens growing on the textured bark of a tree.",
+    "filename": "page268_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page268_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Indian Agricultural Research Institute",
+    "useful_for_students": true,
+    "description": "The image shows the main building of the Indian Agricultural Research Institute (IARI) library in New Delhi, accompanied by the IARI and ICAR logos.",
+    "filename": "page269_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page269_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "agricultural pest control methods",
+    "useful_for_students": true,
+    "description": "A farmer is using a long-reach sprayer to apply pesticides or fertilizers to a flowering mango tree in an orchard.",
+    "filename": "page270_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page270_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "animal waste decomposition",
+    "useful_for_students": true,
+    "description": "A pile of animal dung on grass, often used in science textbooks to illustrate organic waste and decomposition processes.",
+    "filename": "page270_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page270_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Ghee or clarified butter",
+    "useful_for_students": true,
+    "description": "A glass jar filled with yellow ghee accompanied by a spoonful of the same substance.",
+    "filename": "page270_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page270_img04.png"
+  },
+  {
+    "type": "photo",
+    "topic": "manual milking of cow",
+    "useful_for_students": true,
+    "description": "A farmer in blue overalls is manually milking a cow into a black bucket in a barn with straw on the floor.",
+    "filename": "page270_img05.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page270_img05.png"
+  },
+  {
+    "type": "photo",
+    "topic": "organic soil compost",
+    "useful_for_students": true,
+    "description": "A pile of dark, nutrient-rich organic compost or soil used for gardening and agriculture.",
+    "filename": "page271_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page271_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Root nodules in legumes",
+    "useful_for_students": true,
+    "description": "A close-up photograph showing nitrogen-fixing root nodules on the root system of a leguminous plant.",
+    "filename": "page272_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page272_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "deforestation and timber industry",
+    "useful_for_students": true,
+    "description": "A large collection of harvested logs stacked in a clearing near a forest, illustrating the impact of logging activities.",
+    "filename": "page276_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page276_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "dam water management",
+    "useful_for_students": true,
+    "description": "A photograph showing a concrete dam structure with sluice gates allowing water to flow through.",
+    "filename": "page276_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page276_img03.png"
+  },
+  {
+    "type": "photo",
+    "topic": "forest fire combustion",
+    "useful_for_students": true,
+    "description": "A forest fire showing flames consuming trees and ground vegetation, illustrating the process of combustion.",
+    "filename": "page276_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page276_img04.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Siberian cranes in flight",
+    "useful_for_students": true,
+    "description": "Three Siberian cranes flying against a clear blue sky, illustrating bird migration and avian anatomy.",
+    "filename": "page277_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page277_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Tropical rainforest ecosystem",
+    "useful_for_students": true,
+    "description": "An aerial view of a dense, lush tropical rainforest with a winding river flowing through the canopy.",
+    "filename": "page278_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page278_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "sugarcane crop cultivation",
+    "useful_for_students": true,
+    "description": "A field showing young sugarcane plants growing in parallel rows of tilled soil.",
+    "filename": "page279_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page279_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "wildlife and animal biology",
+    "useful_for_students": true,
+    "description": "A full-body photograph of a male lion standing in a grassy field.",
+    "filename": "page280_img04.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page280_img04.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Abutilon flower plant",
+    "useful_for_students": true,
+    "description": "A close-up photograph showing the vibrant orange flowers and fuzzy, heart-shaped leaves of an Abutilon plant.",
+    "filename": "page281_img03.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page281_img03.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "Brachiosaurus dinosaur illustration",
+    "useful_for_students": true,
+    "description": "A detailed digital illustration of a Brachiosaurus walking through a shallow river in a prehistoric forest setting.",
+    "filename": "page282_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page282_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Tiger in natural habitat",
+    "useful_for_students": true,
+    "description": "A young tiger walking through shallow water near a rock formation.",
+    "filename": "page285_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page285_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Red-crested pochard ducks",
+    "useful_for_students": true,
+    "description": "A group of red-crested pochard ducks taking flight from a water body, creating splashes.",
+    "filename": "page285_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page285_img02.png"
+  },
+  {
+    "type": "photo",
+    "topic": "Arignar Anna Zoological Park",
+    "useful_for_students": true,
+    "description": "The homepage of the Arignar Anna Zoological Park website featuring elephants and visitor information.",
+    "filename": "page292_img05.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page292_img05.png"
+  },
+  {
+    "type": "diagram",
+    "topic": "LibreOffice Calc interface components",
+    "useful_for_students": true,
+    "description": "An annotated screenshot of the LibreOffice Calc spreadsheet software interface highlighting key elements like the menu, toolbars, name box, formula bar, and sidebar.",
+    "filename": "page294_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page294_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "spreadsheet data entry",
+    "useful_for_students": true,
+    "description": "A screenshot of a LibreOffice Calc spreadsheet displaying student marks for various subjects.",
+    "filename": "page295_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page295_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "spreadsheet software interface",
+    "useful_for_students": true,
+    "description": "A screenshot showing a context menu open in a spreadsheet application with the 'Merge Cells' option highlighted.",
+    "filename": "page296_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page296_img01.png"
+  },
+  {
+    "type": "illustration",
+    "topic": "spreadsheet data visualization",
+    "useful_for_students": true,
+    "description": "A LibreOffice Calc spreadsheet displaying a table of student marks and a corresponding bar chart.",
+    "filename": "page298_img01.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page298_img01.png"
+  },
+  {
+    "type": "photo",
+    "topic": "spreadsheet calculation example",
+    "useful_for_students": true,
+    "description": "A spreadsheet table showing a list of fruits with their rates, quantities, and a formula for calculating the total cost.",
+    "filename": "page298_img02.png",
+    "public_url": "https://ekvlywtjqjhylhzyuoum.supabase.co/storage/v1/object/public/textbook-diagrams/class8/science_tm/page298_img02.png"
+  }
+]

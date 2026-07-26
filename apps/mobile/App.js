@@ -146,7 +146,7 @@ function AppContent() {
       {/* Screens */}
       <View style={s.screen}>
         {tab === "home"  && <HomeScreen student={student} questionsAsked={questionsAsked} savedCount={savedReplies.length} setTab={setTab} onLogout={onLogout} />}
-        {tab === "vidhu" && <VidhuScreen apiKey={GEMINI_API_KEY} studentClass={student.cls} onSaveReply={onSaveReply} onQuestionAsked={onQuestionAsked} student={student} />}
+        {tab === "vidhu" && <VidhuScreen apiKey={GEMINI_API_KEY} studentClass={student.cls} onSaveReply={onSaveReply} onQuestionAsked={onQuestionAsked} student={student} showToast={showToast} />}
         {tab === "saved" && <SavedScreen savedReplies={savedReplies} setSavedReplies={setSavedReplies} student={student} />}
       </View>
 
