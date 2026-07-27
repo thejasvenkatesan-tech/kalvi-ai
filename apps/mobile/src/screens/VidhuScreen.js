@@ -177,6 +177,12 @@ export default function VidhuScreen({ apiKey, studentClass = "8", onSaveReply, o
         lang: voiceLang,
         interimResults: true,
         continuous: false,
+        volumeChangeEventOptions: { enabled: false },
+        androidIntentOptions: {
+          EXTRA_SPEECH_INPUT_MINIMUM_LENGTH_MILLIS: 15000,
+          EXTRA_SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS: 5000,
+          EXTRA_SPEECH_INPUT_POSSIBLY_COMPLETE_SILENCE_LENGTH_MILLIS: 5000,
+        }
       });
     } catch { setListening(false); }
   }
