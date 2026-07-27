@@ -253,8 +253,8 @@ export default function VidhuScreen({ apiKey, studentClass = "8", onSaveReply, o
       setOffline(false);
       // Generate diagram for Science/Maths topics
       const subject = detectSubject(text);
-      console.log('Diagram subject:', subject, 'for:', text.slice(0,30));
-      if (true) {  // Generate for all topics temporarily
+      const isRedirect = reply.includes('தொடர்பில்லை') || reply.includes('படிப்புடன்') || reply.length < 150 || text.trim().split(' ').length < 3;
+      if (!isRedirect) {
         // Extract the core topic from the question
         const cleanTopic = text.replace(/explain|what is|tell me about|describe|how does|என்றால் என்ன|விளக்கு|பற்றி சொல்|எப்படி/gi, '').trim().slice(0, 80);
         const diagramPrompt = `Simple educational diagram of: ${cleanTopic}. Colorful, clear scientific labels in English. Clean white background. No text like "Class 8", "AI", "Kalvi" or app names in the image. Scientific illustration style for school students.`;
@@ -496,16 +496,16 @@ export default function VidhuScreen({ apiKey, studentClass = "8", onSaveReply, o
 
           {/* Mic button */}
           <TouchableOpacity
-            style={[s.micBtn, listening && s.micBtnActive]}
-            onPress={listening ? stopListening : startListening}>
+            style={[s.micBtn, listening && s.micBtnActive, Object.values(diagramLoading).some(v => v) && { opacity: 0.4 }]}
+            onPress={listening ? stopListening : Object.values(diagramLoading).some(v => v) ? null : startListening}>
             <Text style={s.micBtnText}>{listening ? "⏹" : "🎤"}</Text>
           </TouchableOpacity>
 
           {/* Send button */}
           <TouchableOpacity
-            style={[s.sendBtn, (!input.trim() || loading) && s.sendBtnDisabled]}
+            style={[s.sendBtn, (!input.trim() || loading || Object.values(diagramLoading).some(v => v)) && s.sendBtnDisabled]}
             onPress={send}
-            disabled={!input.trim() || loading}>
+            disabled={!input.trim() || loading || Object.values(diagramLoading).some(v => v)}>
             <Text style={s.sendBtnText}>→</Text>
           </TouchableOpacity>
         </View>
