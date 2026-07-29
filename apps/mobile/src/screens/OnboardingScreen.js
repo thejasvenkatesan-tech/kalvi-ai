@@ -5,7 +5,7 @@ import {
   Platform, ScrollView, ActivityIndicator
 } from "react-native";
 import { colors, spacing, radii, fontSizes } from "../constants/tokens";
-import { fetchSchools, loginStudent } from "../utils/supabase";
+import { searchSchools, loginStudent } from "../utils/supabase";
 
 const CLASS_SECTIONS = [
   "6A","6B","6C","7A","7B","7C",
@@ -27,13 +27,20 @@ export default function OnboardingScreen({ onDone }) {
   const [error, setError]                   = useState("");
   const [authLoading, setAuthLoading]       = useState(false);
 
-  useEffect(() => { if (step === 1) loadSchools(); }, [step]);
+  const [schoolQuery, setSchoolQuery] = useState('');
 
-  async function loadSchools() {
+  useEffect(() => {
+    if (step !== 1) return;
+    const timer = setTimeout(() => doSearch(), 400);
+    return () => clearTimeout(timer);
+  }, [schoolQuery, step]);
+
+  async function doSearch() {
+    if (schoolQuery.length < 2) { setSchools([]); return; }
     setSchoolsLoading(true);
-    setSchoolsError("");
-    const { data, error } = await fetchSchools();
-    if (error) setSchoolsError("பள்ளிகள் ஏற்றுவதில் பிழை");
+    setSchoolsError('');
+    const { data, error } = await searchSchools(schoolQuery);
+    if (error) setSchoolsError('பள்ளிகள் ஏற்றுவதில் பிழை');
     else setSchools(data || []);
     setSchoolsLoading(false);
   }
@@ -75,29 +82,38 @@ export default function OnboardingScreen({ onDone }) {
           {step === 1 && (
             <View style={s.card}>
               <Text style={s.cardTitle}>உன் பள்ளி எது?</Text>
+              <View style={s.searchWrap}>
+                <Text style={s.searchIcon}>🔍</Text>
+                <TextInput
+                  style={s.searchInput}
+                  value={schoolQuery}
+                  onChangeText={setSchoolQuery}
+                  placeholder="பள்ளி பெயர் தேடுக..."
+                  placeholderTextColor="#aaa"
+                  autoCorrect={false}
+                />
+              </View>
               {schoolsLoading && (
                 <View style={s.loadingWrap}>
                   <ActivityIndicator color={colors.blue} />
-                  <Text style={s.loadingText}>பள்ளிகள் ஏற்றுகிறோம்...</Text>
+                  <Text style={s.loadingText}>தேடுகிறோம்...</Text>
                 </View>
               )}
               {schoolsError ? (
-                <View>
-                  <Text style={s.error}>{schoolsError}</Text>
-                  <TouchableOpacity style={s.retryBtn} onPress={loadSchools}>
-                    <Text style={s.retryText}>மீண்டும் முயற்சி</Text>
-                  </TouchableOpacity>
-                </View>
+                <Text style={s.error}>{schoolsError}</Text>
               ) : null}
-              {!schoolsLoading && schools.length === 0 && !schoolsError && (
-                <Text style={s.emptyText}>இன்னும் பள்ளிகள் சேர்க்கவில்லை</Text>
+              {!schoolsLoading && schoolQuery.length >= 2 && schools.length === 0 && !schoolsError && (
+                <Text style={s.emptyText}>பள்ளி கிடைக்கவில்லை. வேறு பெயரில் தேடுங்கள்.</Text>
+              )}
+              {schoolQuery.length < 2 && !school && (
+                <Text style={s.hintText}>குறைந்தது 2 எழுத்துக்கள் தட்டச்சு செய்யுங்கள்</Text>
               )}
               <View style={s.optionsList}>
                 {schools.map(sc => (
                   <TouchableOpacity
                     key={sc.id}
                     style={[s.optionCard, school?.id === sc.id && s.optionCardSel]}
-                    onPress={() => setSchool(sc)}>
+                    onPress={() => { setSchool(sc); setSchools([]); setSchoolQuery(sc.name); }}>
                     <View style={s.optionRow}>
                       <Text style={s.optionIcon}>🏫</Text>
                       <View style={s.optionInfo}>

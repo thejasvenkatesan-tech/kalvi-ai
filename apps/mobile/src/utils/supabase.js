@@ -15,6 +15,18 @@ export async function fetchSchools() {
   return { data, error }
 }
 
+// ── Search schools by query ─────────────────────────────────────
+export async function searchSchools(query) {
+  if (!query || query.length < 2) return { data: [], error: null }
+  const { data, error } = await supabase
+    .from('schools')
+    .select('id, name, district, code')
+    .or(`name.ilike.%${query}%,district.ilike.%${query}%,code.ilike.%${query}%`)
+    .order('name')
+    .limit(4)
+  return { data, error }
+}
+
 // ── Login student ──────────────────────────────────────────────
 export async function loginStudent(schoolId, rollNumber, name, pin) {
   const { data: student, error } = await supabase
