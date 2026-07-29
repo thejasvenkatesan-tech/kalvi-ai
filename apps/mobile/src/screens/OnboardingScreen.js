@@ -31,17 +31,21 @@ export default function OnboardingScreen({ onDone }) {
 
   useEffect(() => {
     if (step !== 1) return;
+    if (schoolQuery.length < 2) { setSchools([]); setSchoolsError(''); return; }
     const timer = setTimeout(() => doSearch(), 400);
     return () => clearTimeout(timer);
   }, [schoolQuery, step]);
 
   async function doSearch() {
-    if (schoolQuery.length < 2) { setSchools([]); return; }
     setSchoolsLoading(true);
     setSchoolsError('');
-    const { data, error } = await searchSchools(schoolQuery);
-    if (error) setSchoolsError('பள்ளிகள் ஏற்றுவதில் பிழை');
-    else setSchools(data || []);
+    try {
+      const { data, error } = await searchSchools(schoolQuery);
+      if (error) setSchoolsError('பள்ளிகள் ஏற்றுவதில் பிழை');
+      else setSchools(data || []);
+    } catch(e) {
+      setSchoolsError('');
+    }
     setSchoolsLoading(false);
   }
 
