@@ -103,7 +103,7 @@ export default function OnboardingScreen({ onDone }) {
                   <Text style={s.loadingText}>தேடுகிறோம்...</Text>
                 </View>
               )}
-              {schoolsError ? (
+              {schoolsError && !school ? (
                 <Text style={s.error}>{schoolsError}</Text>
               ) : null}
               {!schoolsLoading && schoolQuery.length >= 2 && schools.length === 0 && !schoolsError && (
