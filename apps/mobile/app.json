@@ -1,16 +1,16 @@
 {
   "expo": {
-    "name": "கல்வி.AI",
+    "name": "\u0b95\u0bb2\u0bcd\u0bb5\u0bbf.AI",
     "slug": "mobile",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
       "supportsTablet": true,
       "infoPlist": {
-        "NSSpeechRecognitionUsageDescription": "Allow கல்வி.AI to recognize your speech",
-        "NSMicrophoneUsageDescription": "Allow கல்வி.AI to use your microphone for voice questions"
+        "NSSpeechRecognitionUsageDescription": "Allow \u0b95\u0bb2\u0bcd\u0bb5\u0bbf.AI to recognize your speech",
+        "NSMicrophoneUsageDescription": "Allow \u0b95\u0bb2\u0bcd\u0bb5\u0bbf.AI to use your microphone for voice questions"
       }
     },
     "android": {
@@ -24,7 +24,8 @@
         "android.permission.RECORD_AUDIO",
         "android.permission.INTERNET"
       ],
-      "package": "com.kalviai.app"
+      "package": "com.kalviai.app",
+      "versionCode": 2
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -40,8 +41,8 @@
       [
         "expo-speech-recognition",
         {
-          "microphonePermission": "Allow கல்வி.AI to use your microphone for voice questions",
-          "speechRecognitionPermission": "Allow கல்வி.AI to recognize your speech"
+          "microphonePermission": "Allow \u0b95\u0bb2\u0bcd\u0bb5\u0bbf.AI to use your microphone for voice questions",
+          "speechRecognitionPermission": "Allow \u0b95\u0bb2\u0bcd\u0bb5\u0bbf.AI to recognize your speech"
         }
       ],
       "expo-secure-store"
