@@ -128,7 +128,7 @@ const md = StyleSheet.create({
 export default function VidhuScreen({ apiKey, studentClass = "8", onSaveReply, onQuestionAsked, student, showToast }) {
   const [msgs, setMsgs]               = useState([{
     id: "0", role: "assistant",
-    content: "வணக்கம்! நான் விது 🦉\n\nபாடம் சம்பந்தமான எந்த கேள்வியும் கேட்கலாம் — தமிழில் அல்லது ஆங்கிலத்தில்!\n\nகணிதம், அறிவியல், தமிழ், சமூக அறிவியல், AI — எல்லாம் சொல்கிறேன்.\n\n🎤 குரலிலும் கேட்கலாம்!\n\n⚠️ நான் AI — தவறுகள் நடக்கலாம். எல்லா பதில்களையும் உன் ஆசிரியரிடம் உறுதி செய்துகொள்."
+    content: "வணக்கம்! நான் விது 🦉\n\nபாடம் சம்பந்தமான எந்த கேள்வியும் கேட்கலாம் — தமிழில் அல்லது ஆங்கிலத்தில்!\n\nகணிதம், அறிவியல், தமிழ், சமூக அறிவியல், AI — எல்லாம் சொல்கிறேன்.\n\n🎙️ குரலிலும் கேட்கலாம்!\n\n⚠️ நான் AI — தவறுகள் நடக்கலாம். எல்லா பதில்களையும் உன் ஆசிரியரிடம் உறுதி செய்துகொள்."
   }]);
   const [input, setInput]             = useState("");
   const [loading, setLoading]         = useState(false);
@@ -139,7 +139,7 @@ export default function VidhuScreen({ apiKey, studentClass = "8", onSaveReply, o
   const [translating, setTranslating]   = useState({});
   const [speaking, setSpeaking]         = useState(null);
   const [listening, setListening]       = useState(false);
-  const [voiceLang, setVoiceLang]       = useState("ta-IN");
+  const [voiceLang, setVoiceLang]       = useState("en-IN");
   const [lastQuestion, setLastQuestion] = useState('');
   const [diagrams, setDiagrams]           = useState({});
   const [diagramLoading, setDiagramLoading] = useState({});
@@ -155,8 +155,19 @@ export default function VidhuScreen({ apiKey, studentClass = "8", onSaveReply, o
 
   // ── Voice recognition events ───────────────────────────────────────────
   useSpeechRecognitionEvent("result", (e) => {
-    const transcript = e.results?.[0]?.transcript || "";
-    if (transcript) setInput(transcript);
+    // Pick highest confidence result
+    const results = e.results || []
+    let best = ""
+    let bestConf = -1
+    for (const r of results) {
+      const conf = r.confidence ?? 0
+      if (conf > bestConf) {
+        bestConf = conf
+        best = r.transcript || ""
+      }
+    }
+    const transcript = best || results[0]?.transcript || ""
+    if (transcript) setInput(transcript)
   });
 
   useSpeechRecognitionEvent("end", () => setListening(false));
@@ -486,7 +497,7 @@ export default function VidhuScreen({ apiKey, studentClass = "8", onSaveReply, o
           <TouchableOpacity
             style={s.langToggle}
             onPress={() => setVoiceLang(l => l === "ta-IN" ? "en-IN" : "ta-IN")}>
-            <Text style={s.langToggleText}>{voiceLang === "ta-IN" ? "தமிழ்" : "EN"}</Text>
+            <Text style={s.langToggleText}>{voiceLang === "ta-IN" ? "🇮🇳 தமிழ்" : "🇮🇳 EN"}</Text>
           </TouchableOpacity>
 
           <TextInput
@@ -504,7 +515,7 @@ export default function VidhuScreen({ apiKey, studentClass = "8", onSaveReply, o
           <TouchableOpacity
             style={[s.micBtn, listening && s.micBtnActive, Object.values(diagramLoading).some(v => v) && { opacity: 0.4 }]}
             onPress={listening ? stopListening : Object.values(diagramLoading).some(v => v) ? null : startListening}>
-            <Text style={s.micBtnText}>{listening ? "⏹" : "🎤"}</Text>
+            <Text style={s.micBtnText}>{listening ? "⏹" : "🎙️"}</Text>
           </TouchableOpacity>
 
           {/* Send button */}
